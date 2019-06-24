@@ -1,0 +1,166 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/pr/noEvidence/prog.mln;data/pr/noEvidence/evidence.db;1.0;no z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sun Dec 09 14:30:38 IRST 2018
+.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 589
+
+Number of formulas: 1732
+#Hard Formulas: 0
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+13350 evidence atoms
+Aggregation order 0
+===== Start Standard Solver =====Sun Dec 09 14:31:08 IRST 2018
+
+#BinaryVariables: 0
+
+
+#BinaryVariables: 1428232
+
+---- Start  Loop 0 ----Sun Dec 09 14:31:20 IRST 2018
+add 1360528 constraints (total number = 1360528)
+Optimize a model with 1360528 rows, 1428232 columns and 3963908 nonzeros
+Variable types: 0 continuous, 1428232 integer (1428232 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [5e-04, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -121756.9769
+Presolve removed 117676 rows and 117676 columns (presolve time = 5s) ...
+Presolve removed 117676 rows and 117676 columns (presolve time = 14s) ...
+Presolve removed 117676 rows and 117676 columns (presolve time = 19s) ...
+Presolve removed 117676 rows and 117676 columns
+Presolve time: 18.76s
+Presolved: 1242852 rows, 1310556 columns, 3728556 nonzeros
+Variable types: 0 continuous, 1310556 integer (1310556 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 1242852 rows and 1310556 columns
+Presolve: All rows and columns removed
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.9332518e+04   0.000000e+00   0.000000e+00     26s
+Concurrent spin time: 2.12s (can be avoided by choosing Method=3)
+
+Solved with barrier
+
+Root relaxation: objective -4.933252e+04, 0 iterations, 5.48 seconds
+Total elapsed time = 30.97s
+
+Explored 1 nodes (0 simplex iterations) in 299.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -121757 
+
+Optimal solution found (tolerance 1.00e+00)
+Best objective -1.217569768869e+05, best bound -4.933251754316e+04, gap 59.4828%
+ILP took 306904 Milliseconds.
+
+#BinaryVariables: 1445964
+
+---- Start  Loop 1 ----Sun Dec 09 14:36:33 IRST 2018
+add 17732 constraints (total number = 1378260)
+Optimize a model with 1378260 rows, 1445964 columns and 3999372 nonzeros
+Variable types: 0 continuous, 1445964 integer (1445964 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [5e-04, 5e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+MIP start produced solution with objective -122435 (0.18s)
+Loaded MIP start with objective -122435
+
+Presolve removed 135408 rows and 135408 columns (presolve time = 5s) ...
+Presolve removed 135408 rows and 135408 columns (presolve time = 13s) ...
+Presolve removed 135408 rows and 135408 columns (presolve time = 18s) ...
+Presolve removed 135408 rows and 135408 columns
+Presolve time: 18.25s
+Presolved: 1242852 rows, 1310556 columns, 3728556 nonzeros
+Variable types: 0 continuous, 1310556 integer (1310556 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 910000 rows and 910000 columns (presolve time = 5s) ...
+Presolve removed 1242852 rows and 1310556 columns
+Presolve: All rows and columns removed
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.9332518e+04   0.000000e+00   0.000000e+00     26s
+Concurrent spin time: 3.32s (can be avoided by choosing Method=3)
+
+Solved with barrier
+
+Root relaxation: objective -4.933252e+04, 0 iterations, 7.04 seconds
+Total elapsed time = 30.61s
+
+Explored 1 nodes (0 simplex iterations) in 314.96 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -122435 
+
+Optimal solution found (tolerance 1.00e+00)
+Best objective -1.224345097398e+05, best bound -4.933251754316e+04, gap 59.7070%
+ILP took 317630 Milliseconds.
+
+#BinaryVariables: 1445964
+
+Total ILP Time: 624534
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR false ORDER 0============================================
+===== Start Standard Grounder =====Sun Dec 09 14:41:58 IRST 2018
+...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 556
+
+Number of formulas: 1732
+#Hard Formulas: 0
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+148758 evidence atoms
+Grounding took: 26637ms
+Soft objective 3.0235040231249154E7
+Hard objective 0.0
+Evaluation took: 31354ms
+data/pr/noEvidence/prog.mln;data/pr/noEvidence/evidence.db;1.0;no z aggr;cpi;;runtime;692635;objective;3.0235040231249154E7;hardObjective;0.0
+Iteration finished. Run Time: 692635, ILP Time: 624534
+#iterations: 1
+Average Runtime: 692635
+Average ILP Time: 624534
+==========================
+
+data/pr/noEvidence/prog.mln;data/pr/noEvidence/evidence.db;1.0;no z aggr;cpi;;runtime;692635;objective;3.0235040231249154E7;hardObjective;0.0
+duration:692635
+===== Start Standard Grounder =====Sun Dec 09 14:42:29 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 628
+
+Number of formulas: 1733
+#Hard Formulas: 1
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+153540 evidence atoms
+Grounding took: 26868ms
+Soft objective 3.65652361383133E7
+Hard objective 4382.0
+Evaluation took: 31134ms
+With Evidence Evaluation: 3.65652361383133E7
+

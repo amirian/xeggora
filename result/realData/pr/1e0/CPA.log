@@ -1,0 +1,59 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/pr/prog.mln;data/pr/evidence.db;1.0;z aggr;no cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sat Dec 08 20:57:50 IRST 2018
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 592
+
+Number of formulas: 1733
+#Hard Formulas: 1
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+18132 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Sat Dec 08 20:58:19 IRST 2018
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 1
+#CountingConstraintsAggregatingMoreThanOneClause: 1
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 1
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4579
+#ZVariables: 0
+#BinaryVariables: 4579
+
+Exception in thread "pool-2-thread-3" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3744)
+	at java.base/java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:146)
+	at java.base/java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:512)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:141)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.addedAxioms(FormulaRestrictionBuilder.java:477)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.removeEvidenceLiterals(FormulaRestrictionBuilder.java:465)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:392)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Exception in thread "pool-2-thread-2" java.lang.OutOfMemoryError: Java heap space
+	at com.mysql.jdbc.MysqlIO.nextRowFast(MysqlIO.java:1657)
+	at com.mysql.jdbc.MysqlIO.nextRow(MysqlIO.java:1434)
+	at com.mysql.jdbc.MysqlIO.readSingleRowSet(MysqlIO.java:2936)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:477)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2631)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1800)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1557)
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:184)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+

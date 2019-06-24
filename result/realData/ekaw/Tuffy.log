@@ -1,0 +1,66 @@
+mohammad@mohammad:~/projects/xeggora/data/ELOGatIJCAJ2011$ java -jar ~/tuffy/tuffy.jar -i ekaw_mechanical_turk_prog.mln -e ekaw_mechanical_turk_large_evidence.db -o tuffyOutput.db -q pcom,intersection,opsub,psubsumes,opsup,subsumes
+Database schema     = tuffy_mohammad_mohammad_6778
+Current directory   = /home/mohammad/projects/xeggora/data/ELOGatIJCAJ2011
+Temporary directory = /tmp/tuffy-workspace/tuffy_mohammad_mohammad_6778
+*** Welcome to Tuffy 0.3!
+>>> Running partition-aware inference.
+>>> Connecting to RDBMS at jdbc:postgresql://localhost:5432/postgres
+>>> Parsing program file: ekaw_mechanical_turk_prog.mln
+>>> Parsing evidence file: ekaw_mechanical_turk_large_evidence.db
+>>> Storing evidence...
+opsup(v1, v2, v3)
+intersection(v1, v2, v3)
+opsub(v1, v2, v3)
+psubsumes(v1, v2)
+subsumes(v1, v2)
+pcom(v1, v2, v3)
+>>> Grounding...
+### atoms = 11,669; clauses = 884,087
+>>> Partitioning MRF...
+>>> Grouping Components into Buckets...
+### 27 components; 27 partitions; 1 buckets
+>>> Running MAP inference on 27 components (grouped into 1 bucket)
+>>> Processing Bucket #1 (27 components)
+    Loading data...
+    Running inference with 4 thread(s)...
+flushing states of 11669 atoms
+### Best answer has cost 8632000330.10
+>>> Writing answer to file: tuffyOutput.db
+>>> Cleaning up temporary data
+    Removing database schema 'tuffy_mohammad_mohammad_6778'...OK
+    Removing temporary dir '/tmp/tuffy-workspace/tuffy_mohammad_mohammad_6778'...OK
+*** Tuffy exited at 7:11:23 12/10/18 after running for [423 min, 35.391 sec] (7hours 25415sec)
+
+===== Start Standard Grounder =====Mon Dec 10 07:15:19 IRST 2018
+........................PutDataIntoTables duration: 141
+
+Number of formulas: 21
+#Hard Formulas: 15
+#Soft Formulas: 0
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 0
+#Objective Formulas: 6
+#Cardinality Formulas: 0
+28456 evidence atoms
+Grounding took: 496ms
+Soft objective 2311.642625948883
+Hard objective 1.019522263E10
+Evaluation took: 1662ms
+No Simplify Tuffy Evaluation: 2311.642625948883
+
+===== Start Standard Grounder =====Mon Dec 10 00:12:52 IRST 2018
+........................PutDataIntoTables duration: 155
+
+Number of formulas: 21
+#Hard Formulas: 15
+#Soft Formulas: 0
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 0
+#Objective Formulas: 6
+#Cardinality Formulas: 0
+10994 evidence atoms
+Grounding took: 553ms
+Soft objective -7.958078640513122E-12
+Hard objective 1.0195222575E10
+Evaluation took: 2140ms
+No Simplify Empty Evaluation: -7.958078640513122E-12

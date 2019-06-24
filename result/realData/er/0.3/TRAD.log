@@ -1,0 +1,106 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;no cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Thu Dec 13 14:58:59 IRST 2018
+...................PutDataIntoTables duration: 118
+
+Number of formulas: 7717
+#Hard Formulas: 8
+#Soft Formulas: 7709
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1265
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+28282 evidence atoms
+Aggregation order 0
+===== Start Standard Solver =====Thu Dec 13 14:59:00 IRST 2018
+
+#BinaryVariables: 10760
+
+
+#BinaryVariables: 369539
+
+---- Start  Loop 0 ----Thu Dec 13 14:59:03 IRST 2018
+add 312231 constraints (total number = 312231)
+Optimize a model with 312231 rows, 369539 columns and 753660 nonzeros
+Variable types: 0 continuous, 369539 integer (369539 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+00]
+  Objective range  [7e-03, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 13300.451976
+Presolve removed 281849 rows and 338191 columns
+Presolve time: 0.76s
+Presolved: 30382 rows, 31348 columns, 113850 nonzeros
+Found heuristic solution: objective 18960.595446
+Variable types: 0 continuous, 31348 integer (31348 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 30382 rows and 31348 columns
+Presolve: All rows and columns removed
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.694100e+04, 0 iterations, 0.07 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    20243.522314 26941.0003  33.1%     -    3s
+H    0     0                    20257.290730 26941.0003  33.0%     -    3s
+     0     0 26544.3023    0 30061 20257.2907 26544.3023  31.0%     -    7s
+H    0     0                    20340.025106 26544.3023  30.5%     -    8s
+     0     0 26132.6421    0 29973 20340.0251 26132.6421  28.5%     -   10s
+     0     0 26132.6421    0 29973 20340.0251 26132.6421  28.5%     -   10s
+
+Cutting planes:
+  Cover: 7342
+  Clique: 30
+
+Explored 1 nodes (5616 simplex iterations) in 10.59 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 20340 20257.3 20243.5 ... 17089.3
+
+Optimal solution found (tolerance 3.00e-01)
+Best objective 2.034002510564e+04, best bound 2.613264209962e+04, gap 28.4789%
+ILP took 12584 Milliseconds.
+
+#BinaryVariables: 369539
+
+Total ILP Time: 12584
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI false=Z-VAR AGGR false ORDER 0============================================
+===== Start Standard Grounder =====Thu Dec 13 14:59:17 IRST 2018
+.......................PutDataIntoTables duration: 358
+
+Number of formulas: 7717
+#Hard Formulas: 8
+#Soft Formulas: 7709
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1265
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+150010 evidence atoms
+Grounding took: 680ms
+Soft objective 7714.438061939991
+Hard objective 10760.0
+Evaluation took: 2353ms
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;no cpi;;runtime;18843;objective;7714.438061939991;hardObjective;10760.0
+Iteration finished. Run Time: 18843, ILP Time: 12584
+#iterations: 1
+Average Runtime: 18843
+Average ILP Time: 12584
+==========================
+
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;no cpi;;runtime;18843;objective;7714.438061939991;hardObjective;10760.0
+duration:18843
+

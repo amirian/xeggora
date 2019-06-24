@@ -1,0 +1,141 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Thu Jun 07 03:01:28 IRDT 2018
+...................PutDataIntoTables duration: 76
+
+Number of formulas: 7717
+28282 evidence atoms
+Aggregation order 0
+===== Start Standard Solver =====Thu Jun 07 03:01:29 IRDT 2018
+
+
+---- Start  Loop 0 ----Thu Jun 07 03:01:31 IRDT 2018
+add 246514 constraints (total number = 246514)
+Optimize a model with 246514 rows, 303822 columns and 577824 nonzeros
+Variable types: 0 continuous, 303822 integer (303822 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+00]
+  Objective range  [1e-01, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 5234.1668880
+Presolve removed 216132 rows and 272474 columns
+Presolve time: 0.63s
+Presolved: 30382 rows, 31348 columns, 113850 nonzeros
+Found heuristic solution: objective 8699.3961480
+Variable types: 0 continuous, 31348 integer (31348 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 30382 rows and 31348 columns
+Presolve: All rows and columns removed
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.679934e+04, 0 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    10252.705155 16799.3436  63.9%     -    2s
+H    0     0                    10265.345442 16799.3436  63.7%     -    3s
+     0     0 16430.4008    0 30100 10265.3454 16430.4008  60.1%     -    6s
+H    0     0                    10276.017360 16430.4008  59.9%     -    7s
+     0     0 16029.8364    0 30093 10276.0174 16029.8364  56.0%     -    9s
+     0     0 15575.9377    0 30360 10276.0174 15575.9377  51.6%     -   16s
+H    0     0                    10277.910738 15575.9377  51.5%     -   90s
+H    0     0                    10280.435523 15575.9377  51.5%     -   90s
+H    0     0                    10284.131328 15575.9377  51.5%     -   90s
+H    0     0                    10287.337086 15575.9377  51.4%     -   90s
+H    0     0                    10290.418287 15575.9377  51.4%     -   90s
+H    0     0                    10291.589307 15575.9377  51.3%     -   90s
+H    0     0                    10292.760327 15575.9377  51.3%     -   90s
+H    0     0                    10294.363206 15575.9377  51.3%     -   90s
+H    0     0                    10295.534226 15575.9377  51.3%     -   90s
+H    0     0                    10297.444407 15575.9377  51.3%     -   90s
+H    0     0                    10298.059011 15575.9377  51.3%     -   90s
+H    0     0                    10304.462346 15575.9377  51.2%     -   90s
+H    0     0                    10306.679829 15575.9377  51.1%     -   90s
+H    0     0                    10317.542673 15575.9377  51.0%     -   90s
+H    0     0                    10333.398951 15575.9377  50.7%     -   90s
+H    0     0                    10552.134216 15575.9377  47.6%     -   90s
+H    0     0                    10571.983368 15575.9377  47.3%     -   90s
+H    0     0                    10624.213764 15575.9377  46.6%     -   90s
+     0     0 15071.8662    0 30428 10624.2138 15071.8662  41.9%     -   92s
+H    0     0                    10627.170408 15071.8662  41.8%     -  373s
+H    0     0                    10633.274622 15071.8662  41.7%     -  373s
+H    0     0                    10639.071534 15071.8662  41.7%     -  374s
+H    0     0                    10639.810695 15071.8662  41.7%     -  374s
+H    0     0                    10640.117997 15071.8662  41.7%     -  374s
+H    0     0                    10641.164460 15071.8662  41.6%     -  374s
+H    0     0                    10641.347205 15071.8662  41.6%     -  374s
+H    0     0                    10654.178418 15071.8662  41.5%     -  374s
+H    0     0                    10658.928867 15071.8662  41.4%     -  374s
+H    0     0                    10669.791711 15071.8662  41.3%     -  374s
+H    0     0                    10693.610325 15071.8662  40.9%     -  374s
+H    0     0                    10696.076922 15071.8662  40.9%     -  374s
+H    0     0                    10697.928915 15071.8662  40.9%     -  374s
+H    0     0                    10701.076485 15071.8662  40.8%     -  374s
+H    0     0                    10701.632901 15071.8662  40.8%     -  374s
+H    0     0                    10722.553059 15071.8662  40.6%     -  374s
+H    0     0                    10723.973193 15071.8662  40.5%     -  374s
+H    0     0                    10744.278747 15071.8662  40.3%     -  374s
+H    0     0                    10749.153753 15071.8662  40.2%     -  374s
+H    0     0                    10751.188491 15071.8662  40.2%     -  374s
+H    0     0                    10756.370799 15071.8662  40.1%     -  374s
+H    0     0                    10757.724564 15071.8662  40.1%     -  374s
+H    0     0                    10788.291684 15071.8662  39.7%     -  374s
+H    0     0                    10790.201865 15071.8662  39.7%     -  374s
+H    0     0                    10797.169797 15071.8662  39.6%     -  374s
+     0     0 14622.0599    0 31075 10797.1698 14622.0599  35.4%     -  375s
+     0     0 14478.9895    0 31348 10797.1698 14478.9895  34.1%     -  438s
+     0     0 14396.7563    0 31206 10797.1698 14396.7563  33.3%     -  454s
+     0     0 14396.5404    0 31207 10797.1698 14396.5404  33.3%     -  455s
+     0     0 14217.2537    0 30609 10797.1698 14217.2537  31.7%     -  492s
+     0     0 14146.6584    0 30743 10797.1698 14146.6584  31.0%     -  549s
+     0     0 14135.8468    0 30865 10797.1698 14135.8468  30.9%     -  559s
+     0     0 14132.6002    0 30927 10797.1698 14132.6002  30.9%     -  561s
+     0     0 14131.7558    0 30957 10797.1698 14131.7558  30.9%     -  562s
+     0     0 14047.0982    0 30840 10797.1698 14047.0982  30.1%     -  600s
+
+Cutting planes:
+  Gomory: 12
+  Cover: 12054
+  Clique: 84
+  Zero half: 5667
+
+Explored 1 nodes (85277 simplex iterations) in 600.20 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 10: 10797.2 10790.2 10788.3 ... 10722.6
+
+Time limit reached
+Best objective 1.079716979700e+04, best bound 1.404709820630e+04, gap 30.0998%
+ILP took 600809 Milliseconds.
+
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR false ORDER 0============================================
+===== Start Standard Grounder =====Thu Jun 07 03:11:33 IRDT 2018
+.......................PutDataIntoTables duration: 53
+
+Number of formulas: 7717
+28282 evidence atoms
+Soft objective -129153.26079199999
+Hard objective 3570.0
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;cpi;;runtime;606482;objective;-129153.26079199999;hardObjective;3570.0
+Iteration finished. Run Time: 606482, ILP Time: 600809
+#iterations: 1
+Average Runtime: 606482
+Average ILP Time: 600809
+==========================
+
+data/er/prog.mln;data/er/evidence.db;0.3;no z aggr;cpi;;runtime;606482;objective;-129153.26079199999;hardObjective;3570.0
+duration:606482
+

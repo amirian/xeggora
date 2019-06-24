@@ -1,0 +1,932 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/pr/prog.mln;data/pr/evidence.db;1.0E-6;no z aggr;no cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sat Dec 08 21:22:38 IRST 2018
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 482
+
+Number of formulas: 2504
+#Hard Formulas: 1
+#Soft Formulas: 2503
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 2460
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+18132 evidence atoms
+Aggregation order 0
+===== Start Standard Solver =====Sat Dec 08 21:23:06 IRST 2018
+
+#BinaryVariables: 4579
+
+Exception in thread "pool-2-thread-3" java.lang.OutOfMemoryError: Java heap space
+	at com.mysql.jdbc.SingleByteCharsetConverter.toString(SingleByteCharsetConverter.java:328)
+	at com.mysql.jdbc.ResultSetRow.getString(ResultSetRow.java:793)
+	at com.mysql.jdbc.ByteArrayRow.getString(ByteArrayRow.java:70)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5693)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5570)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:353)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Exception in thread "pool-2-thread-4" java.lang.OutOfMemoryError: Java heap space
+	at com.mysql.jdbc.MysqlIO.nextRowFast(MysqlIO.java:1657)
+	at com.mysql.jdbc.MysqlIO.nextRow(MysqlIO.java:1434)
+	at com.mysql.jdbc.MysqlIO.readSingleRowSet(MysqlIO.java:2936)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:477)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2631)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1800)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1557)
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:184)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01084625) as weight, xx.varString1505, xx.a1 FROM (SELECT x1.field0 as `varString1505`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1505` x1 ) as xx
+ - Message Unknown character set index for field '866' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.1026295) as weight, xx.varString511, xx.a1 FROM (SELECT x1.field0 as `varString511`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString511` x1 ) as xx
+ - Message Unexpected exception encountered during query.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.1026295) as weight, xx.varString511, xx.a1 FROM (SELECT x1.field0 as `varString511`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString511` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01084625) as weight, xx.varString1505, xx.a1 FROM (SELECT x1.field0 as `varString1505`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1505` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.154237) as weight, xx.varString926, xx.a1 FROM (SELECT x1.field0 as `varString926`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString926` x1 ) as xx
+ - Message Unknown character set index for field '4864' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.158604) as weight, xx.a2, xx.a3, xx.a1 FROM (SELECT x0.field0 as `a2`, x1.field0 as `a3`, x2.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `Func_id_typePred` x1  INNER JOIN `Protein_typePred` x2 ) as xx
+ - Message Unknown character set index for field '867' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0624119) as weight, xx.varString1343, xx.a1 FROM (SELECT x1.field0 as `varString1343`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1343` x1 ) as xx
+ - Message Unknown character set index for field '25198' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0436411) as weight, xx.a2, xx.a3, xx.a1 FROM (SELECT x0.field0 as `a2`, x1.field0 as `a3`, x2.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `Func_id_typePred` x1  INNER JOIN `Protein_typePred` x2 ) as xx
+ - Message Unknown character set index for field '28016' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0306603) as weight, xx.varString172, xx.a1 FROM (SELECT x1.field0 as `varString172`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString172` x1 ) as xx
+ - Message Unknown character set index for field '25138' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01643215) as weight, xx.varString1335, xx.a1 FROM (SELECT x1.field0 as `varString1335`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1335` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01643215) as weight, xx.varString1335, xx.a1 FROM (SELECT x1.field0 as `varString1335`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1335` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0445362) as weight, xx.varString1338, xx.a1 FROM (SELECT x1.field0 as `varString1338`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1338` x1 ) as xx
+ - Message Unknown character set index for field '29753' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0927819) as weight, xx.varString1339, xx.a1 FROM (SELECT x1.field0 as `varString1339`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1339` x1 ) as xx
+ - Message Unknown character set index for field '28675' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0306603) as weight, xx.varString172, xx.a1 FROM (SELECT x1.field0 as `varString172`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString172` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0571835) as weight, xx.varString1570, xx.a1 FROM (SELECT x1.field0 as `varString1570`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1570` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.03016035) as weight, xx.varString403, xx.a1 FROM (SELECT x1.field0 as `varString403`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString403` x1 ) as xx
+ - Message Unknown character set index for field '14387' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.03016035) as weight, xx.varString403, xx.a1 FROM (SELECT x1.field0 as `varString403`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString403` x1 ) as xx
+ - Message Unknown character set index for field '11824' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.02673365) as weight, xx.varString844, xx.a1 FROM (SELECT x1.field0 as `varString844`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString844` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0571835) as weight, xx.varString1570, xx.a1 FROM (SELECT x1.field0 as `varString1570`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1570` x1 ) as xx
+ - Message Unknown character set index for field '25189' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0424023) as weight, xx.varString701, xx.a1 FROM (SELECT x1.field0 as `varString701`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString701` x1 ) as xx
+ - Message Unknown character set index for field '27440' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * -0.00528476) as weight, xx.varString929, xx.a1 FROM (SELECT x1.field0 as `varString929`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString929` x1 ) as xx
+ - Message Unexpected exception encountered during query.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * -0.0466292) as weight, xx.varString928, xx.a1 FROM (SELECT x1.field0 as `varString928`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString928` x1 ) as xx
+ - Message Unknown character set index for field '14387' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.02673365) as weight, xx.varString844, xx.a1 FROM (SELECT x1.field0 as `varString844`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString844` x1 ) as xx
+ - Message Unknown character set index for field '14640' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0406253) as weight, xx.varString137, xx.a1 FROM (SELECT x1.field0 as `varString137`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString137` x1 ) as xx
+ - Message Unknown character set index for field '-27904' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01052425) as weight, xx.varString566, xx.a1 FROM (SELECT x1.field0 as `varString566`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString566` x1 ) as xx
+ - Message Unknown character set index for field '25197' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0480069) as weight, xx.varString443, xx.a1 FROM (SELECT x1.field0 as `varString443`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString443` x1 ) as xx
+ - Message Unknown character set index for field '26161' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.01052425) as weight, xx.varString566, xx.a1 FROM (SELECT x1.field0 as `varString566`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString566` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0480069) as weight, xx.varString443, xx.a1 FROM (SELECT x1.field0 as `varString443`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString443` x1 ) as xx
+ - Message Unknown character set index for field '25190' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0460596) as weight, xx.varString423, xx.a1 FROM (SELECT x1.field0 as `varString423`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString423` x1 ) as xx
+ - Message Unknown character set index for field '5474' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0158016) as weight, xx.varString1295, xx.a1 FROM (SELECT x1.field0 as `varString1295`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1295` x1 ) as xx
+ - Message Unknown character set index for field '25187' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0406253) as weight, xx.varString137, xx.a1 FROM (SELECT x1.field0 as `varString137`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString137` x1 ) as xx
+ - Message Unknown character set index for field '13826' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0824035) as weight, xx.varString1550, xx.a1 FROM (SELECT x1.field0 as `varString1550`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1550` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.00883181) as weight, xx.varString699, xx.a1 FROM (SELECT x1.field0 as `varString699`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString699` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0158016) as weight, xx.varString1295, xx.a1 FROM (SELECT x1.field0 as `varString1295`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1295` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0824035) as weight, xx.varString1550, xx.a1 FROM (SELECT x1.field0 as `varString1550`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1550` x1 ) as xx
+ - Message Unknown character set index for field '13105' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * -0.00918698) as weight, xx.varString930, xx.a1 FROM (SELECT x1.field0 as `varString930`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString930` x1 ) as xx
+ - Message Unknown character set index for field '13873' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0460596) as weight, xx.varString423, xx.a1 FROM (SELECT x1.field0 as `varString423`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString423` x1 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0353324) as weight, xx.varString700, xx.a1 FROM (SELECT x1.field0 as `varString700`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString700` x1 ) as xx
+ - Message Unknown character set index for field '12334' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.00950019) as weight, xx.varString932, xx.a1 FROM (SELECT x1.field0 as `varString932`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString932` x1 ) as xx
+ - Message Unknown character set index for field '31280' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.063261) as weight, xx.varString724, xx.a1 FROM (SELECT x1.field0 as `varString724`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString724` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.00373864) as weight, xx.varString931, xx.a1 FROM (SELECT x1.field0 as `varString931`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString931` x1 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.063261) as weight, xx.varString724, xx.a1 FROM (SELECT x1.field0 as `varString724`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString724` x1 ) as xx
+ - Message Unknown character set index for field '14387' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+

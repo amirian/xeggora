@@ -1,0 +1,672 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Mon Dec 10 22:59:42 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 700
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+263150 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Mon Dec 10 22:59:59 IRST 2018
+#AggregatedHardFormulas: 0
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 0
+#CountingConstraintsAggregatingMoreThanOneClause: 0
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 0
+#ZVariables: 0
+#BinaryVariables: 0
+
+#AggregatedHardFormulas: 3
+#AggregatedSoftFormulas: 1021
+#AggregatedClauses: 9
+#CountingConstraintsAggregatingMoreThanOneClause: 9
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 9
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4581
+#ZVariables: 9
+#BinaryVariables: 4576
+
+---- Start  Loop 0 ----Mon Dec 10 23:00:00 IRST 2018
+add 9 constraints (total number = 9)
+Optimize a model with 9 rows, 4585 columns and 4590 nonzeros
+Variable types: 0 continuous, 4585 integer (4576 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 9e-01]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [5e+02, 6e+02]
+Found heuristic solution: objective 1196.3089652
+Presolve removed 9 rows and 4585 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1199.3 1196.31 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.199296494400e+03, best bound 1.199296494400e+03, gap 0.0000%
+ILP took 34 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 1606
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+---- Start  Loop 1 ----Mon Dec 10 23:00:00 IRST 2018
+add 11 constraints (total number = 20)
+Optimize a model with 20 rows, 4588 columns and 5127 nonzeros
+Variable types: 0 continuous, 4588 integer (4577 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 5e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R9 by 1.000000000
+
+Found heuristic solution: objective 1007.5495013
+Presolve removed 20 rows and 4588 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1013.28 1007.55 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.013282888500e+03, best bound 1.013282888500e+03, gap 0.0000%
+ILP took 36 Milliseconds.
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 2191
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+Total ILP Time: 70
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Mon Dec 10 23:00:02 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 633
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+267028 evidence atoms
+Grounding took: 16650ms
+Soft objective 1013.2828885000001
+Hard objective 72474.0
+Evaluation took: 18254ms
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;20846;objective;1013.2828885000001;hardObjective;72474.0
+Iteration finished. Run Time: 20846, ILP Time: 70
+
+*** ITERATION 2 ***
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Mon Dec 10 23:00:21 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 619
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+263150 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Mon Dec 10 23:00:37 IRST 2018
+#AggregatedHardFormulas: 0
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 0
+#CountingConstraintsAggregatingMoreThanOneClause: 0
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 0
+#ZVariables: 0
+#BinaryVariables: 0
+
+#AggregatedHardFormulas: 3
+#AggregatedSoftFormulas: 1021
+#AggregatedClauses: 9
+#CountingConstraintsAggregatingMoreThanOneClause: 9
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 9
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4581
+#ZVariables: 9
+#BinaryVariables: 4576
+
+---- Start  Loop 0 ----Mon Dec 10 23:00:38 IRST 2018
+add 9 constraints (total number = 9)
+Optimize a model with 9 rows, 4585 columns and 4590 nonzeros
+Variable types: 0 continuous, 4585 integer (4576 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 9e-01]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [5e+02, 6e+02]
+Found heuristic solution: objective 1196.3089652
+Presolve removed 9 rows and 4585 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1199.3 1196.31 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.199296494400e+03, best bound 1.199296494400e+03, gap 0.0000%
+ILP took 53 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 1606
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+---- Start  Loop 1 ----Mon Dec 10 23:00:38 IRST 2018
+add 11 constraints (total number = 20)
+Optimize a model with 20 rows, 4588 columns and 5127 nonzeros
+Variable types: 0 continuous, 4588 integer (4577 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 5e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R9 by 1.000000000
+
+Found heuristic solution: objective 1007.5495013
+Presolve removed 20 rows and 4588 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1013.28 1007.55 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.013282888500e+03, best bound 1.013282888500e+03, gap 0.0000%
+ILP took 27 Milliseconds.
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 2191
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+Total ILP Time: 80
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Mon Dec 10 23:00:40 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 631
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+267028 evidence atoms
+Grounding took: 16218ms
+Soft objective 1013.2828885000001
+Hard objective 72474.0
+Evaluation took: 17628ms
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;19656;objective;1013.2828885000001;hardObjective;72474.0
+Iteration finished. Run Time: 19656, ILP Time: 80
+
+*** ITERATION 3 ***
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Mon Dec 10 23:00:58 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 626
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+263150 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Mon Dec 10 23:01:14 IRST 2018
+#AggregatedHardFormulas: 0
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 0
+#CountingConstraintsAggregatingMoreThanOneClause: 0
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 0
+#ZVariables: 0
+#BinaryVariables: 0
+
+#AggregatedHardFormulas: 3
+#AggregatedSoftFormulas: 1021
+#AggregatedClauses: 9
+#CountingConstraintsAggregatingMoreThanOneClause: 9
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 9
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4581
+#ZVariables: 9
+#BinaryVariables: 4576
+
+---- Start  Loop 0 ----Mon Dec 10 23:01:15 IRST 2018
+add 9 constraints (total number = 9)
+Optimize a model with 9 rows, 4585 columns and 4590 nonzeros
+Variable types: 0 continuous, 4585 integer (4576 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 9e-01]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [5e+02, 6e+02]
+Found heuristic solution: objective 1196.3089652
+Presolve removed 9 rows and 4585 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1199.3 1196.31 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.199296494400e+03, best bound 1.199296494400e+03, gap 0.0000%
+ILP took 23 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 1606
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+---- Start  Loop 1 ----Mon Dec 10 23:01:15 IRST 2018
+add 11 constraints (total number = 20)
+Optimize a model with 20 rows, 4588 columns and 5127 nonzeros
+Variable types: 0 continuous, 4588 integer (4577 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 5e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R9 by 1.000000000
+
+Found heuristic solution: objective 1007.5495013
+Presolve removed 20 rows and 4588 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1013.28 1007.55 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.013282888500e+03, best bound 1.013282888500e+03, gap 0.0000%
+ILP took 47 Milliseconds.
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 2191
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+Total ILP Time: 70
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Mon Dec 10 23:01:16 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 548
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+267028 evidence atoms
+Grounding took: 16038ms
+Soft objective 1013.2828885000001
+Hard objective 72474.0
+Evaluation took: 17398ms
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18925;objective;1013.2828885000001;hardObjective;72474.0
+Iteration finished. Run Time: 18925, ILP Time: 70
+
+*** ITERATION 4 ***
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Mon Dec 10 23:01:34 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 635
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+263150 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Mon Dec 10 23:01:51 IRST 2018
+#AggregatedHardFormulas: 0
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 0
+#CountingConstraintsAggregatingMoreThanOneClause: 0
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 0
+#ZVariables: 0
+#BinaryVariables: 0
+
+#AggregatedHardFormulas: 3
+#AggregatedSoftFormulas: 1021
+#AggregatedClauses: 9
+#CountingConstraintsAggregatingMoreThanOneClause: 9
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 9
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4581
+#ZVariables: 9
+#BinaryVariables: 4576
+
+---- Start  Loop 0 ----Mon Dec 10 23:01:51 IRST 2018
+add 9 constraints (total number = 9)
+Optimize a model with 9 rows, 4585 columns and 4590 nonzeros
+Variable types: 0 continuous, 4585 integer (4576 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 9e-01]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [5e+02, 6e+02]
+Found heuristic solution: objective 1196.3089652
+Presolve removed 9 rows and 4585 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1199.3 1196.31 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.199296494400e+03, best bound 1.199296494400e+03, gap 0.0000%
+ILP took 17 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 1606
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+---- Start  Loop 1 ----Mon Dec 10 23:01:51 IRST 2018
+add 11 constraints (total number = 20)
+Optimize a model with 20 rows, 4588 columns and 5127 nonzeros
+Variable types: 0 continuous, 4588 integer (4577 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 5e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R9 by 1.000000000
+
+Found heuristic solution: objective 1007.5495013
+Presolve removed 20 rows and 4588 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1013.28 1007.55 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.013282888500e+03, best bound 1.013282888500e+03, gap 0.0000%
+ILP took 16 Milliseconds.
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 2191
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+Total ILP Time: 33
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Mon Dec 10 23:01:52 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 548
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+267028 evidence atoms
+Grounding took: 16780ms
+Soft objective 1013.2828885000001
+Hard objective 72474.0
+Evaluation took: 17964ms
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18796;objective;1013.2828885000001;hardObjective;72474.0
+Iteration finished. Run Time: 18796, ILP Time: 33
+
+*** ITERATION 5 ***
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Mon Dec 10 23:02:11 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 566
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+263150 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Mon Dec 10 23:02:27 IRST 2018
+#AggregatedHardFormulas: 0
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 0
+#CountingConstraintsAggregatingMoreThanOneClause: 0
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 0
+#ZVariables: 0
+#BinaryVariables: 0
+
+#AggregatedHardFormulas: 3
+#AggregatedSoftFormulas: 1021
+#AggregatedClauses: 9
+#CountingConstraintsAggregatingMoreThanOneClause: 9
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 9
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4581
+#ZVariables: 9
+#BinaryVariables: 4576
+
+---- Start  Loop 0 ----Mon Dec 10 23:02:28 IRST 2018
+add 9 constraints (total number = 9)
+Optimize a model with 9 rows, 4585 columns and 4590 nonzeros
+Variable types: 0 continuous, 4585 integer (4576 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 9e-01]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [5e+02, 6e+02]
+Found heuristic solution: objective 1196.3089652
+Presolve removed 9 rows and 4585 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1199.3 1196.31 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.199296494400e+03, best bound 1.199296494400e+03, gap 0.0000%
+ILP took 18 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 1606
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+---- Start  Loop 1 ----Mon Dec 10 23:02:28 IRST 2018
+add 11 constraints (total number = 20)
+Optimize a model with 20 rows, 4588 columns and 5127 nonzeros
+Variable types: 0 continuous, 4588 integer (4577 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-02, 5e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R9 by 1.000000000
+
+Found heuristic solution: objective 1007.5495013
+Presolve removed 20 rows and 4588 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 1013.28 1007.55 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.013282888500e+03, best bound 1.013282888500e+03, gap 0.0000%
+ILP took 18 Milliseconds.
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 2191
+#AggregatedClauses: 20
+#CountingConstraintsAggregatingMoreThanOneClause: 11
+#CountingConstraintsWithMoreThanOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 8
+#CountingConstraintsWithOneLiteral: 12
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 5099
+#ZVariables: 12
+#BinaryVariables: 4577
+
+Total ILP Time: 36
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Mon Dec 10 23:02:29 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 531
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+267028 evidence atoms
+Grounding took: 16472ms
+Soft objective 1013.2828885000001
+Hard objective 72474.0
+Evaluation took: 17664ms
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18897;objective;1013.2828885000001;hardObjective;72474.0
+Iteration finished. Run Time: 18897, ILP Time: 36
+#iterations: 5
+Average Runtime: 19424
+Average ILP Time: 57
+==========================
+
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;20846;objective;1013.2828885000001;hardObjective;72474.0
+duration:20846
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;19656;objective;1013.2828885000001;hardObjective;72474.0
+duration:19656
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18925;objective;1013.2828885000001;hardObjective;72474.0
+duration:18925
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18796;objective;1013.2828885000001;hardObjective;72474.0
+duration:18796
+data/ie/prog.mln;data/ie/evidence.db;1.0E-6;z aggr;cpi;;runtime;18897;objective;1013.2828885000001;hardObjective;72474.0
+duration:18897
+

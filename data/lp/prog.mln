@@ -1,0 +1,72 @@
+//predicate declarations
+*hasPosition(Person,Position)
+*samePhase(Phase,Phase)
+advisedBy(Person,Person)
+*sameProject(Project,Project)
+*professor(Person)
+*sameCourse(Course,Course)
+*publication(Title,Person)
+*yearsInProgram(Person,Integer)
+*inPhase(Person,Phase)
+*samePosition(Position,Position)
+*samePerson(Person,Person)
+*sameQuarter(Quarter,Quarter)
+*ta(Course,Person,Quarter)
+*sameLevel(Level,Level)
+*taughtBy(Course,Person,Quarter)
+*student(Person)
+*tempAdvisedBy(Person,Person)
+*introCourse(Course)
+*projectMember(Project,Person)
+*courseLevel(Course,Level)
+*sameInteger(Integer,Integer)
+*sameTitle(Title,Title)
+
+
+-1.94203  student(a1) v !advisedBy(a2,a1)
+
+-0.0732856  !taughtBy(a1,a2,a3) v !courseLevel(a1,"Level500") v advisedBy(a4,a2) v tempAdvisedBy(a4,a2) v !ta(a1,a4,a3)
+
+-2.38127  professor(a1) v !advisedBy(a1,a2)
+
+0.118837  !advisedBy(a1,a2) v !yearsInProgram(a1,"Year1")
+
+-0.0302834  student(a1) v !student(a2) v !publication(a3,a1) v !publication(a3,a2) v advisedBy(a2,a1) v tempAdvisedBy(a2,a1)
+
+-2.38127  !student(a1) v advisedBy(a1,a2) v tempAdvisedBy(a1,a2)
+
+1.27773  !professor(a1) v !hasPosition(a1,"Faculty") v advisedBy(a2,a1) v tempAdvisedBy(a2,a1)
+
+0.671981  !advisedBy(a1,a1)
+
+2.01213  !advisedBy(a1,a2) v !tempAdvisedBy(a1,a3)
+
+0.326654  !advisedBy(a1,a2) v !inPhase(a1,"PreQuals")
+
+-0.000635066  !taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v advisedBy(a4,a2) v !inPhase(a4,"PostQuals") v !ta(a1,a4,a3)
+
+0.112133  !taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v !advisedBy(a4,a2) v !inPhase(a4,"PostQuals") v ta(a1,a4,a3)
+
+0.0518195  taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v !advisedBy(a4,a2) v !inPhase(a4,"PostQuals") v !ta(a1,a4,a3)
+
+-0.000634612  !taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v advisedBy(a4,a2) v !inPhase(a4,"PostGenerals") v !ta(a1,a4,a3)
+
+0.145903  !taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v !advisedBy(a4,a2) v !inPhase(a4,"PostGenerals") v ta(a1,a4,a3)
+
+0.095052  taughtBy(a1,a2,a3) v courseLevel(a1,"Level100") v !advisedBy(a4,a2) v !inPhase(a4,"PostGenerals") v !ta(a1,a4,a3)
+
+0.749123  !publication(a1,a2) v !publication(a1,a3) v advisedBy(a2,a3) v advisedBy(a3,a2) v samePerson(a2,a3)
+
+-0.0302834  !professor(a1) v !student(a2) v !publication(a3,a1) v !publication(a3,a2) v advisedBy(a2,a1) v samePerson(a1,a2)
+
+-0.337329  publication(a1,a2) v !publication(a1,a3) v !advisedBy(a3,a2)
+
+0.515549  student(a1) v !advisedBy(a1,a2)
+
+0.954782  professor(a1) v !advisedBy(a2,a1)
+
+-2.89681  advisedBy(a1,a2)
+
+0.709057  !advisedBy(a1,a2) v !advisedBy(a2,a1)
+
+0.384788  !advisedBy(a1,a2) v !advisedBy(a1,a3) v samePerson(a2,a3)

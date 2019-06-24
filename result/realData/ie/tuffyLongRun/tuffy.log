@@ -1,0 +1,46 @@
+$ java -jar ~/tuffy/tuffy.jar -i prog.mln -e evidence.db -q InField,SameBib -o tuffyOutput.db -maxFlips 30000000 -maxTries 5
+Database schema     = tuffy_mohammad_mohammad_6596
+Current directory   = /home/mohammad/projects/xeggora/data/ie
+Temporary directory = /tmp/tuffy-workspace/tuffy_mohammad_mohammad_6596
+*** Welcome to Tuffy 0.3!
+>>> Running partition-aware inference.
+>>> Connecting to RDBMS at jdbc:postgresql://localhost:5432/postgres
+>>> Parsing program file: prog.mln
+>>> Parsing evidence file: evidence.db
+.
+>>> Storing evidence...
+InField(v1, v2, v3)
+SameBib(v1, v2)
+>>> Grounding...
+### atoms = 6,819; clauses = 8,499
+>>> Partitioning MRF...
+>>> Grouping Components into Buckets...
+### 5341 components; 5341 partitions; 1 buckets
+>>> Running MAP inference on 5,341 components (grouped into 1 bucket)
+>>> Processing Bucket #1 (5,341 components)
+    Loading data...
+    Running inference with 4 thread(s)...
+flushing states of 6819 atoms
+### Best answer has cost 1635.55
+>>> Writing answer to file: tuffyOutput.db
+>>> Cleaning up temporary data
+    Removing database schema 'tuffy_mohammad_mohammad_6596'...OK
+    Removing temporary dir '/tmp/tuffy-workspace/tuffy_mohammad_mohammad_6596'...OK
+*** Tuffy exited at 17:03:17 12/16/18 after running for [0 min, 40.709 sec]
+
+===== Start Standard Grounder =====Sun Dec 16 17:06:49 IRST 2018
+..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 778
+
+Number of formulas: 1024
+#Hard Formulas: 3
+#Soft Formulas: 1021
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1021
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+272772 evidence atoms
+Grounding took: 17458ms
+Soft objective 825.4364214999999
+Hard objective 72474.0
+Evaluation took: 20349ms
+No Simplify Tuffy1 Evaluation: 825.4364214999999

@@ -1,0 +1,9 @@
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.01;FCA;cpi;not simplified;#iters: 1;ILPtime: 976062;runtime: 994169;objective: 2012.1015852479518;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.01;CPA;cpi;not simplified;#iters: 1;ILPtime: 1750324;runtime: 1770368;objective: 2003.1272740066418;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.01;TRAD;cpi;not simplified;#iters: 1;ILPtime: 504406;runtime: 513014;objective: 2010.8377253990252;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.001;FCA;cpi;not simplified;#iters: 1;ILPtime: 1002670;runtime: 1014300;objective: 2019.1736497771908;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.001;CPA;cpi;not simplified;#iters: 1;ILPtime: 2178665;runtime: 2190252;objective: 2019.2908525018129;hardObjective: 1.0195222796E10<REACHED 10 MIN>
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 0.001;TRAD;cpi;not simplified;#iters: 1;ILPtime: 740472;runtime: 747924;objective: 2019.23505888636;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 5.0E-4;FCA;cpi;not simplified;#iters: 1;ILPtime: 1891930;runtime: 1903475;objective: 2019.4472823421784;hardObjective: 1.0195222796E10
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 5.0E-4;CPA;cpi;not simplified;#iters: 1;ILPtime: 3333197;runtime: 3344507;objective: 2019.230048047616;hardObjective: 1.0195222796E10<REACHED 10 MIN>
+data/ekaw/prog.mln;data/ekaw/evidence.db;gap: 5.0E-4;TRAD;cpi;not simplified;#iters: 1;ILPtime: 1530685;runtime: 1537855;objective: 2019.4472823421784;hardObjective: 1.0195222796E10

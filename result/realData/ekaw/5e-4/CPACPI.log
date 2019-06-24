@@ -1,0 +1,2578 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/ELOGatIJCAJ2011/ekaw_mechanical_turk_prog.mln;data/ELOGatIJCAJ2011/ekaw_mechanical_turk_large_evidence.db;5.0E-4;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sat Dec 15 17:31:51 IRST 2018
+..................PutDataIntoTables duration: 80
+
+Number of formulas: 21
+#Hard Formulas: 15
+#Soft Formulas: 0
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 0
+#Objective Formulas: 6
+#Cardinality Formulas: 0
+10994 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Sat Dec 15 17:31:51 IRST 2018
+#AggregatedHardFormulas: 9
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 5
+#CountingConstraintsAggregatingMoreThanOneClause: 5
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 5
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 296
+#ZVariables: 0
+#BinaryVariables: 10862
+
+#AggregatedHardFormulas: 15
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 5
+#CountingConstraintsAggregatingMoreThanOneClause: 5
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 5
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 296
+#ZVariables: 0
+#BinaryVariables: 10862
+
+---- Start  Loop 0 ----Sat Dec 15 17:31:51 IRST 2018
+add 5 constraints (total number = 5)
+Optimize a model with 5 rows, 10862 columns and 296 nonzeros
+Variable types: 0 continuous, 10862 integer (10862 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+01, 8e+01]
+Found heuristic solution: objective 2641.7411761
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 2641.74 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.641741176071e+03, best bound 2.641741176071e+03, gap 0.0000%
+ILP took 104 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 382660
+#CountingConstraintsAggregatingMoreThanOneClause: 5737
+#CountingConstraintsWithMoreThanOneLiteral: 382655
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 389938
+#CountingConstraintsWithOneLiteral: 5
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 296
+#ZVariables: 0
+#BinaryVariables: 11657
+
+---- Start  Loop 1 ----Sat Dec 15 17:32:00 IRST 2018
+add 382655 constraints (total number = 382660)
+Optimize a model with 382660 rows, 11657 columns and 1149541 nonzeros
+Variable types: 0 continuous, 11657 integer (11657 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R2466 by 1.000000000
+
+Found heuristic solution: objective 1165.3162279
+Presolve removed 2466 rows and 1097 columns
+Presolve time: 3.76s
+Presolved: 380194 rows, 10560 columns, 1140580 nonzeros
+Variable types: 0 continuous, 10560 integer (10560 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolved: 10560 rows, 390754 columns, 1151140 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4471779e+02   2.170520e+03   0.000000e+00      6s
+   13733    2.0325662e+03   2.422760e+01   0.000000e+00     10s
+   14893    2.0328151e+03   0.000000e+00   0.000000e+00     12s
+   14893    2.0328151e+03   0.000000e+00   0.000000e+00     12s
+   14893    2.0328151e+03   0.000000e+00   0.000000e+00     13s
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.032815e+03, 14893 iterations, 8.33 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2032.81511    0  728 1165.31623 2032.81511  74.4%     -   15s
+H    0     0                    2010.5701037 2032.81511  1.11%     -   15s
+H    0     0                    2022.4722937 2032.81511  0.51%     -   16s
+     0     0 2029.42811    0 1166 2022.47229 2029.42811  0.34%     -   42s
+H    0     0                    2026.1393167 2029.42811  0.16%     -   45s
+     0     0 2028.66920    0 1173 2026.13932 2028.66920  0.12%     -   67s
+     0     0 2028.63192    0 1161 2026.13932 2028.63192  0.12%     -   72s
+     0     0 2028.62592    0 1087 2026.13932 2028.62592  0.12%     -   74s
+     0     0 2028.62512    0 1145 2026.13932 2028.62512  0.12%     -   75s
+     0     0 2028.62492    0 1146 2026.13932 2028.62492  0.12%     -   76s
+     0     0 2028.43156    0  281 2026.13932 2028.43156  0.11%     -   88s
+     0     0 2028.42697    0  290 2026.13932 2028.42697  0.11%     -   91s
+     0     0 2028.42638    0  290 2026.13932 2028.42638  0.11%     -   92s
+     0     0 2028.36696    0  302 2026.13932 2028.36696  0.11%     -   99s
+     0     0 2028.36585    0  863 2026.13932 2028.36585  0.11%     -  103s
+     0     0 2028.36451    0  340 2026.13932 2028.36451  0.11%     -  104s
+     0     0 2028.36260    0  294 2026.13932 2028.36260  0.11%     -  106s
+     0     0 2028.36245    0  345 2026.13932 2028.36245  0.11%     -  107s
+     0     0 2028.30124    0  133 2026.13932 2028.30124  0.11%     -  113s
+     0     0 2028.29843    0  139 2026.13932 2028.29843  0.11%     -  116s
+     0     0 2028.29843    0  133 2026.13932 2028.29843  0.11%     -  121s
+H    0     0                    2026.1627117 2028.29843  0.11%     -  136s
+     0     2 2028.29843    0  131 2026.16271 2028.29843  0.11%     -  143s
+     1     4 2028.29552    1  114 2026.16271 2028.29821  0.11%   342  146s
+     3     8 2028.25252    2  112 2026.16271 2028.29444  0.11%   251  151s
+     7    12 2028.21439    3  110 2026.16271 2028.28595  0.10%   180  156s
+    11    16 2028.20489    4  106 2026.16271 2028.28595  0.10%   165  160s
+    15    16 2028.18392    5   93 2026.16271 2028.28595  0.10%   174  165s
+    19    22 2028.14090    6  103 2026.16271 2028.28595  0.10%   215  175s
+    27    26 2027.84641    7   73 2026.16271 2028.28595  0.10%   217  184s
+    31    30 2027.80078    8   40 2026.16271 2028.28595  0.10%   203  195s
+    53    54 2027.33360   15   65 2026.16271 2028.28595  0.10%   144  207s
+    70    71 2027.04668   21   37 2026.16271 2028.28595  0.10%   131  218s
+    86    86 2026.83765   24   56 2026.16271 2028.28595  0.10%   126  231s
+   105   104 2026.61466   31   32 2026.16271 2028.28595  0.10%   122  245s
+   126   113 2026.27199   39   29 2026.16271 2028.26931  0.10%   110  260s
+H  175   153                    2026.1836313 2028.25433  0.10%  86.1  460s
+   180   157 2027.71470    4   73 2026.18363 2028.25433  0.10%  91.9  475s
+   190   162 2027.66907    5   40 2026.18363 2028.25433  0.10%  95.2  487s
+   203   171 2027.45563    8   69 2026.18363 2028.25433  0.10%  94.9  520s
+   223   186 2026.99542   17   38 2026.18363 2028.25433  0.10%   108  537s
+   243   196 2026.70501   22   39 2026.18363 2028.25433  0.10%   110  555s
+   275   211 2027.57425    4   73 2026.18363 2028.25183  0.10%   105  573s
+   304   231 2027.52863    5   40 2026.18363 2028.25183  0.10%   102  596s
+   323   237 2026.28290   35   31 2026.18363 2028.25183  0.10%   108  600s
+
+Cutting planes:
+  Gomory: 26
+  Cover: 370
+  MIR: 1283
+  Zero half: 329
+
+Explored 324 nodes (61869 simplex iterations) in 600.23 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: 2026.18 2026.16 2026.14 ... 1165.32
+
+Time limit reached
+Best objective 2.026183631316e+03, best bound 2.028251829348e+03, gap 0.1021%
+ILP took 601520 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 389292
+#CountingConstraintsAggregatingMoreThanOneClause: 5948
+#CountingConstraintsWithMoreThanOneLiteral: 389286
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 397504
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 2 ----Sat Dec 15 17:42:02 IRST 2018
+add 6632 constraints (total number = 389292)
+Optimize a model with 389292 rows, 11669 columns and 1170032 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 6e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R382660 by 1.000000000
+
+Found heuristic solution: objective 1323.0708706
+Presolve removed 3773 rows and 830 columns (presolve time = 6s) ...
+Presolve removed 3773 rows and 830 columns
+Presolve time: 6.74s
+Presolved: 385519 rows, 10839 columns, 1157361 nonzeros
+Variable types: 0 continuous, 10839 integer (10839 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 12 rows and 12 columns
+Presolved: 10827 rows, 396346 columns, 1168200 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.170620e+03   0.000000e+00      9s
+   12207    2.0266888e+03   3.522678e+01   0.000000e+00     10s
+   14679    2.0278014e+03   3.212251e+00   0.000000e+00     15s
+   14921    2.0278059e+03   0.000000e+00   0.000000e+00     16s
+   14921    2.0278059e+03   0.000000e+00   0.000000e+00     16s
+   14921    2.0278059e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.027806e+03, 14921 iterations, 9.18 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2027.80591    0 1090 1323.07087 2027.80591  53.3%     -   20s
+H    0     0                    2007.9454500 2027.80591  0.99%     -   20s
+H    0     0                    2020.5230864 2027.80591  0.36%     -   21s
+     0     0 2025.26262    0  808 2020.52309 2025.26262  0.23%     -   40s
+H    0     0                    2023.0542922 2025.26262  0.11%     -   43s
+     0     0 2025.25097    0  798 2023.05429 2025.25097  0.11%     -   45s
+     0     0 2025.25082    0  797 2023.05429 2025.25082  0.11%     -   46s
+     0     0 2024.74278    0  575 2023.05429 2024.74278  0.08%     -   56s
+     0     0 2024.74019    0  516 2023.05429 2024.74019  0.08%     -   59s
+     0     0 2024.73709    0  522 2023.05429 2024.73709  0.08%     -   61s
+     0     0 2024.50308    0  530 2023.05429 2024.50308  0.07%     -   67s
+     0     0 2024.46710    0  872 2023.05429 2024.46710  0.07%     -   71s
+     0     0 2024.43750    0  902 2023.05429 2024.43750  0.07%     -   74s
+     0     0 2024.43631    0  509 2023.05429 2024.43631  0.07%     -   75s
+     0     0 2024.35060    0  229 2023.05429 2024.35060  0.06%     -   81s
+     0     0 2024.34298    0  152 2023.05429 2024.34298  0.06%     -   85s
+     0     0 2024.25876    0  152 2023.05429 2024.25876  0.06%     -   88s
+     0     0 2024.25251    0  156 2023.05429 2024.25251  0.06%     -   93s
+     0     0 2024.24766    0  156 2023.05429 2024.24766  0.06%     -   96s
+     0     0 2024.24711    0  138 2023.05429 2024.24711  0.06%     -   98s
+H    0     0                    2023.1976059 2024.24711  0.05%     -  100s
+     0     0 2024.24711    0  128 2023.19761 2024.24711  0.05%     -  107s
+     0     2 2024.24711    0  128 2023.19761 2024.24711  0.05%     -  124s
+     1     4 2024.24289    1  124 2023.19761 2024.24289  0.05%   306  125s
+     7    12 2024.19454    3  113 2023.19761 2024.21899  0.05%  73.7  130s
+
+Cutting planes:
+  Gomory: 19
+  Cover: 409
+  Clique: 1581
+  MIR: 181
+  StrongCG: 1
+  Zero half: 584
+  Mod-K: 2
+
+Explored 11 nodes (22325 simplex iterations) in 130.20 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2023.2 2023.05 2020.52 ... 1323.07
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.023197605892e+03, best bound 2.024195272478e+03, gap 0.0493%
+ILP took 130407 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 389587
+#CountingConstraintsAggregatingMoreThanOneClause: 5961
+#CountingConstraintsWithMoreThanOneLiteral: 389581
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 398305
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 3 ----Sat Dec 15 17:44:12 IRST 2018
+add 295 constraints (total number = 389587)
+Optimize a model with 389587 rows, 11669 columns and 1171407 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R389292 by 1.000000000
+
+Found heuristic solution: objective 1323.0579960
+Presolve removed 3114 rows and 790 columns (presolve time = 5s) ...
+Presolve removed 3114 rows and 790 columns
+Presolve time: 6.94s
+Presolved: 386473 rows, 10879 columns, 1160758 nonzeros
+Variable types: 0 continuous, 10879 integer (10879 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 8 rows and 8 columns
+Presolved: 10871 rows, 397344 columns, 1171636 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.170620e+03   0.000000e+00      9s
+   11835    2.0242151e+03   6.477139e+01   0.000000e+00     10s
+   14567    2.0261837e+03   1.321313e+02   0.000000e+00     15s
+   15583    2.0263803e+03   0.000000e+00   0.000000e+00     18s
+   15583    2.0263803e+03   0.000000e+00   0.000000e+00     18s
+   15583    2.0263803e+03   0.000000e+00   0.000000e+00     19s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.026380e+03, 15583 iterations, 11.00 seconds
+Total elapsed time = 20.51s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2026.38033    0 1012 1323.05800 2026.38033  53.2%     -   23s
+H    0     0                    2008.5291839 2026.38033  0.89%     -   23s
+H    0     0                    2018.4551850 2026.38033  0.39%     -   24s
+     0     0 2023.85653    0  840 2018.45518 2023.85653  0.27%     -   51s
+H    0     0                    2021.3403766 2023.85653  0.12%     -   54s
+     0     0 2023.85639    0  802 2021.34038 2023.85639  0.12%     -   55s
+     0     0 2023.07985    0  885 2021.34038 2023.07985  0.09%     -   69s
+H    0     0                    2021.4365953 2023.07985  0.08%     -   72s
+     0     0 2023.02786    0  888 2021.43660 2023.02786  0.08%     -   75s
+     0     0 2023.02133    0  897 2021.43660 2023.02133  0.08%     -   78s
+     0     0 2023.02096    0  899 2021.43660 2023.02096  0.08%     -   79s
+     0     0 2022.80793    0  589 2021.43660 2022.80793  0.07%     -   89s
+H    0     0                    2021.4919694 2022.80793  0.07%     -   91s
+     0     0 2022.79032    0  613 2021.49197 2022.79032  0.06%     -   93s
+     0     0 2022.78725    0  588 2021.49197 2022.78725  0.06%     -   94s
+     0     0 2022.78723    0  589 2021.49197 2022.78723  0.06%     -   96s
+     0     0 2022.69774    0  535 2021.49197 2022.69774  0.06%     -  102s
+     0     0 2022.68380    0  549 2021.49197 2022.68380  0.06%     -  105s
+     0     0 2022.68336    0  304 2021.49197 2022.68336  0.06%     -  107s
+     0     0 2022.67807    0  535 2021.49197 2022.67807  0.06%     -  110s
+     0     0 2022.67678    0  541 2021.49197 2022.67678  0.06%     -  113s
+     0     0 2022.67677    0  541 2021.49197 2022.67677  0.06%     -  114s
+     0     0 2022.67436    0  518 2021.49197 2022.67436  0.06%     -  118s
+     0     0 2022.67400    0  515 2021.49197 2022.67400  0.06%     -  121s
+     0     0 2022.67400    0  516 2021.49197 2022.67400  0.06%     -  125s
+     0     0 2022.67400    0  465 2021.49197 2022.67400  0.06%     -  136s
+     0     2 2022.67400    0  462 2021.49197 2022.67400  0.06%     -  160s
+     3     8 2022.63134    2  484 2021.49197 2022.65399  0.06%   167  165s
+    15    17 2022.60849    5  428 2021.49197 2022.62950  0.06%  91.5  172s
+    19    19 2022.52944    6  417 2021.49197 2022.62950  0.06%   109  176s
+    23    26 2022.51772    7  239 2021.49197 2022.62950  0.06%   116  184s
+    27    28 2022.46766    8  197 2021.49197 2022.62950  0.06%   159  190s
+    31    33 2022.44084    9  178 2021.49197 2022.62950  0.06%   146  202s
+    45    48 2022.22728   12  225 2021.49197 2022.62950  0.06%   151  215s
+    65    58 2022.24021   14   56 2021.49197 2022.62950  0.06%   124  232s
+   108    84 2021.78897   23   28 2021.49197 2022.62584  0.06%  88.0  249s
+   153   100 2022.59527    4  477 2021.49197 2022.62584  0.06%  73.8  261s
+   165   112 2022.48246    5  446 2021.49197 2022.62584  0.06%  70.7  275s
+   184   120 2022.34962   10  250 2021.49197 2022.61848  0.06%  75.6  294s
+H  192   126                    2021.5276408 2022.61848  0.05%  74.7  294s
+   197   119 2022.21949   15   63 2021.52764 2022.61746  0.05%  73.9  318s
+   308   185 2022.51617    6  183 2021.52764 2022.60586  0.05%  60.2  339s
+   400   247     cutoff   31      2021.52764 2022.59777  0.05%  53.8  376s
+   453   268 2022.55003    7  414 2021.52764 2022.59098  0.05%  52.3  404s
+*  521   313              16    2021.5763397 2022.59098  0.05%  50.0  405s
+   558   341 2022.50101    6  417 2021.57634 2022.58799  0.05%  50.5  437s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 502
+  Clique: 2398
+  MIR: 303
+  StrongCG: 1
+  Zero half: 587
+
+Explored 686 nodes (58254 simplex iterations) in 437.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 8: 2021.58 2021.53 2021.49 ... 1323.06
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.021576339668e+03, best bound 2.022572834683e+03, gap 0.0493%
+ILP took 437214 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 389808
+#CountingConstraintsAggregatingMoreThanOneClause: 5965
+#CountingConstraintsWithMoreThanOneLiteral: 389802
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 398712
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 4 ----Sat Dec 15 17:51:30 IRST 2018
+add 221 constraints (total number = 389808)
+Optimize a model with 389808 rows, 11669 columns and 1172251 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R389587 by 1.000000000
+
+Found heuristic solution: objective 1323.4133317
+Presolve removed 2877 rows and 758 columns (presolve time = 5s) ...
+Presolve removed 2877 rows and 758 columns
+Presolve time: 7.16s
+Presolved: 386931 rows, 10911 columns, 1162399 nonzeros
+Variable types: 0 continuous, 10911 integer (10911 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 7 rows and 7 columns
+Presolved: 10904 rows, 397835 columns, 1173309 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.168764e+03   0.000000e+00      9s
+   11329    2.0228422e+03   7.892356e+01   0.000000e+00     10s
+   15022    2.0252524e+03   0.000000e+00   0.000000e+00     15s
+   15022    2.0252523e+03   0.000000e+00   0.000000e+00     15s
+   15022    2.0252523e+03   0.000000e+00   0.000000e+00     16s
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.025252e+03, 15022 iterations, 7.85 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2025.25234    0 1070 1323.41333 2025.25234  53.0%     -   20s
+H    0     0                    2008.7100813 2025.25234  0.82%     -   20s
+H    0     0                    2018.7365889 2025.25234  0.32%     -   21s
+     0     0 2022.88583    0  951 2018.73659 2022.88583  0.21%     -   42s
+H    0     0                    2020.6409213 2022.88583  0.11%     -   45s
+     0     0 2022.82862    0  921 2020.64092 2022.82862  0.11%     -   47s
+     0     0 2022.81951    0  931 2020.64092 2022.81951  0.11%     -   48s
+     0     0 2022.17237    0  454 2020.64092 2022.17237  0.08%     -   62s
+H    0     0                    2020.7119549 2022.17237  0.07%     -   64s
+     0     0 2022.14348    0  363 2020.71195 2022.14348  0.07%     -   66s
+     0     0 2022.14125    0  350 2020.71195 2022.14125  0.07%     -   67s
+     0     0 2022.13772    0  374 2020.71195 2022.13772  0.07%     -   68s
+     0     0 2021.93620    0  299 2020.71195 2021.93620  0.06%     -   74s
+H    0     0                    2020.8444242 2021.93620  0.05%     -   76s
+     0     0 2021.93115    0  311 2020.84442 2021.93115  0.05%     -   78s
+     0     0 2021.93115    0  311 2020.84442 2021.93115  0.05%     -   79s
+     0     0 2021.86256    0  460 2020.84442 2021.86256  0.05%     -   84s
+H    0     0                    2021.0887792 2021.86256  0.04%     -   86s
+
+Cutting planes:
+  Gomory: 13
+  Cover: 453
+  Clique: 3031
+  MIR: 143
+  StrongCG: 4
+  Zero half: 314
+
+Explored 1 nodes (21280 simplex iterations) in 86.52 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 2021.09 2020.84 2020.71 ... 1323.41
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.021088779238e+03, best bound 2.021862561550e+03, gap 0.0383%
+ILP took 86620 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 389920
+#CountingConstraintsAggregatingMoreThanOneClause: 5967
+#CountingConstraintsWithMoreThanOneLiteral: 389914
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 398965
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 5 ----Sat Dec 15 17:52:56 IRST 2018
+add 112 constraints (total number = 389920)
+Optimize a model with 389920 rows, 11669 columns and 1172726 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R389808 by 1.000000000
+
+Found heuristic solution: objective 1323.4133317
+Presolve removed 2768 rows and 739 columns (presolve time = 5s) ...
+Presolve removed 2768 rows and 739 columns
+Presolve time: 7.19s
+Presolved: 387152 rows, 10930 columns, 1163182 nonzeros
+Variable types: 0 continuous, 10930 integer (10930 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 5 rows and 5 columns
+Presolved: 10925 rows, 398077 columns, 1174111 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.168424e+03   0.000000e+00      9s
+   11535    2.0227184e+03   1.129959e+02   0.000000e+00     10s
+   14873    2.0247211e+03   8.715574e+00   0.000000e+00     15s
+   15183    2.0247308e+03   0.000000e+00   0.000000e+00     16s
+   15183    2.0247308e+03   0.000000e+00   0.000000e+00     16s
+   15183    2.0247308e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.024731e+03, 15183 iterations, 8.81 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2024.73080    0 1063 1323.41333 2024.73080  53.0%     -   22s
+H    0     0                    2008.3257027 2024.73080  0.82%     -   23s
+H    0     0                    2017.1909094 2024.73080  0.37%     -   24s
+     0     0 2022.20267    0  762 2017.19091 2022.20267  0.25%     -   49s
+H    0     0                    2020.4543207 2022.20267  0.09%     -   52s
+     0     0 2022.20146    0  761 2020.45432 2022.20146  0.09%     -   53s
+     0     0 2021.65643    0  498 2020.45432 2021.65643  0.06%     -   68s
+     0     0 2021.60897    0  815 2020.45432 2021.60897  0.06%     -   73s
+     0     0 2021.60612    0  513 2020.45432 2021.60612  0.06%     -   74s
+     0     0 2021.60607    0  512 2020.45432 2021.60607  0.06%     -   75s
+     0     0 2021.40971    0  823 2020.45432 2021.40971  0.05%     -   86s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 485
+  Clique: 3422
+  MIR: 137
+  Zero half: 450
+
+Explored 1 nodes (22974 simplex iterations) in 86.40 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2020.45 2017.19 2008.33 1323.41 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.020454320659e+03, best bound 2.021409707814e+03, gap 0.0473%
+ILP took 86477 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390082
+#CountingConstraintsAggregatingMoreThanOneClause: 5970
+#CountingConstraintsWithMoreThanOneLiteral: 390076
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 399333
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 6 ----Sat Dec 15 17:54:23 IRST 2018
+add 162 constraints (total number = 390082)
+Optimize a model with 390082 rows, 11669 columns and 1173415 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R389920 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2768 rows and 739 columns (presolve time = 6s) ...
+Presolve removed 2768 rows and 739 columns
+Presolve time: 6.77s
+Presolved: 387314 rows, 10930 columns, 1163871 nonzeros
+Variable types: 0 continuous, 10930 integer (10930 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10926 rows, 398240 columns, 1174801 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.168151e+03   0.000000e+00      9s
+   12004    2.0223739e+03   7.490451e+01   0.000000e+00     10s
+   15222    2.0243349e+03   1.103846e+00   0.000000e+00     16s
+   15346    2.0243357e+03   0.000000e+00   0.000000e+00     16s
+   15346    2.0243357e+03   0.000000e+00   0.000000e+00     16s
+   15346    2.0243357e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.024336e+03, 15346 iterations, 9.32 seconds
+Total elapsed time = 20.06s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2024.33565    0 1022 1323.32567 2024.33565  53.0%     -   23s
+H    0     0                    2004.2759486 2024.33565  1.00%     -   23s
+H    0     0                    2017.4718418 2024.33565  0.34%     -   24s
+     0     0 2021.79798    0  932 2017.47184 2021.79798  0.21%     -   55s
+H    0     0                    2020.1054953 2021.79798  0.08%     -   58s
+     0     0 2021.78414    0  929 2020.10550 2021.78414  0.08%     -   60s
+     0     0 2021.78393    0  929 2020.10550 2021.78393  0.08%     -   61s
+     0     0 2021.19236    0  866 2020.10550 2021.19236  0.05%     -   78s
+H    0     0                    2020.1229542 2021.19236  0.05%     -   80s
+     0     0 2021.15639    0  444 2020.12295 2021.15639  0.05%     -   82s
+     0     0 2021.15462    0  450 2020.12295 2021.15462  0.05%     -   84s
+     0     0 2021.15451    0  460 2020.12295 2021.15451  0.05%     -   85s
+     0     0 2021.05390    0  879 2020.12295 2021.05390  0.05%     -   92s
+
+Cutting planes:
+  Gomory: 18
+  Cover: 464
+  Clique: 3973
+  MIR: 143
+  Zero half: 276
+
+Explored 1 nodes (24029 simplex iterations) in 92.78 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2020.12 2020.11 2017.47 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.020122954191e+03, best bound 2.021053897000e+03, gap 0.0461%
+ILP took 92834 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390247
+#CountingConstraintsAggregatingMoreThanOneClause: 5972
+#CountingConstraintsWithMoreThanOneLiteral: 390241
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 399636
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 7 ----Sat Dec 15 17:55:56 IRST 2018
+add 165 constraints (total number = 390247)
+Optimize a model with 390247 rows, 11669 columns and 1174046 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390082 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2768 rows and 739 columns (presolve time = 6s) ...
+Presolve removed 2768 rows and 739 columns
+Presolve time: 6.83s
+Presolved: 387479 rows, 10930 columns, 1164502 nonzeros
+Variable types: 0 continuous, 10930 integer (10930 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10926 rows, 398405 columns, 1175432 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167986e+03   0.000000e+00      9s
+   11988    2.0216094e+03   6.286047e+01   0.000000e+00     10s
+   15365    2.0240213e+03   0.000000e+00   0.000000e+00     15s
+   15365    2.0240213e+03   0.000000e+00   0.000000e+00     15s
+   15365    2.0240213e+03   0.000000e+00   0.000000e+00     16s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.024021e+03, 15365 iterations, 8.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2024.02127    0 1145 1323.32567 2024.02127  52.9%     -   20s
+H    0     0                    2000.2430798 2024.02127  1.19%     -   21s
+H    0     0                    2017.4238068 2024.02127  0.33%     -   22s
+     0     0 2021.40548    0  862 2017.42381 2021.40548  0.20%     -   53s
+H    0     0                    2019.7188136 2021.40548  0.08%     -   56s
+     0     0 2021.38342    0  856 2019.71881 2021.38342  0.08%     -   58s
+     0     0 2021.38325    0  862 2019.71881 2021.38325  0.08%     -   60s
+     0     0 2020.91056    0  395 2019.71881 2020.91056  0.06%     -   74s
+H    0     0                    2019.8243760 2020.91056  0.05%     -   76s
+     0     0 2020.87575    0  396 2019.82438 2020.87575  0.05%     -   79s
+     0     0 2020.87570    0  387 2019.82438 2020.87570  0.05%     -   80s
+     0     0 2020.71400    0  845 2019.82438 2020.71400  0.04%     -   88s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 524
+  Clique: 3446
+  MIR: 90
+  StrongCG: 4
+  Zero half: 345
+
+Explored 1 nodes (23533 simplex iterations) in 88.48 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.82 2019.72 2017.42 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019824375953e+03, best bound 2.020714003357e+03, gap 0.0440%
+ILP took 88531 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390327
+#CountingConstraintsAggregatingMoreThanOneClause: 5973
+#CountingConstraintsWithMoreThanOneLiteral: 390321
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 399786
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 8 ----Sat Dec 15 17:57:25 IRST 2018
+add 80 constraints (total number = 390327)
+Optimize a model with 390327 rows, 11669 columns and 1174355 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390247 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 5s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 7.38s
+Presolved: 387650 rows, 10931 columns, 1165083 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398577 columns, 1176014 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167836e+03   0.000000e+00     10s
+   10431    2.0194591e+03   1.845372e+02   0.000000e+00     10s
+   14394    2.0237133e+03   3.553207e+01   0.000000e+00     15s
+   15596    2.0238686e+03   0.000000e+00   0.000000e+00     17s
+   15596    2.0238686e+03   0.000000e+00   0.000000e+00     17s
+   15596    2.0238686e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.02s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023869e+03, 15596 iterations, 9.84 seconds
+Total elapsed time = 20.16s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.86862    0 1129 1323.32567 2023.86862  52.9%     -   24s
+H    0     0                    2003.0584636 2023.86862  1.04%     -   24s
+H    0     0                    2017.5264013 2023.86862  0.31%     -   25s
+     0     0 2021.25330    0  745 2017.52640 2021.25330  0.18%     -   55s
+H    0     0                    2019.7269085 2021.25330  0.08%     -   58s
+     0     0 2021.22941    0  722 2019.72691 2021.22941  0.07%     -   61s
+     0     0 2021.22903    0  721 2019.72691 2021.22903  0.07%     -   63s
+     0     0 2020.76125    0  429 2019.72691 2020.76125  0.05%     -   80s
+     0     0 2020.71859    0  427 2019.72691 2020.71859  0.05%     -   85s
+     0     0 2020.71859    0  427 2019.72691 2020.71859  0.05%     -   85s
+
+Cutting planes:
+  Gomory: 16
+  Cover: 499
+  Clique: 3425
+  MIR: 137
+  Zero half: 293
+
+Explored 1 nodes (23674 simplex iterations) in 86.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.73 2017.53 2003.06 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019726908540e+03, best bound 2.020718590059e+03, gap 0.0491%
+ILP took 86077 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390432
+#CountingConstraintsAggregatingMoreThanOneClause: 5976
+#CountingConstraintsWithMoreThanOneLiteral: 390426
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400097
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 9 ----Sat Dec 15 17:58:51 IRST 2018
+add 105 constraints (total number = 390432)
+Optimize a model with 390432 rows, 11669 columns and 1174873 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390327 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 5s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 7.14s
+Presolved: 387755 rows, 10931 columns, 1165601 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398682 columns, 1176532 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167680e+03   0.000000e+00      9s
+   11341    2.0209723e+03   7.221301e+01   0.000000e+00     10s
+   14709    2.0237266e+03   4.056795e+00   0.000000e+00     15s
+   15132    2.0237575e+03   0.000000e+00   0.000000e+00     16s
+   15132    2.0237575e+03   0.000000e+00   0.000000e+00     16s
+   15132    2.0237575e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023757e+03, 15132 iterations, 8.94 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.75747    0 1048 1323.32567 2023.75747  52.9%     -   22s
+H    0     0                    2001.6339898 2023.75747  1.11%     -   22s
+H    0     0                    2017.2809808 2023.75747  0.32%     -   23s
+     0     0 2021.32085    0  832 2017.28098 2021.32085  0.20%     -   49s
+H    0     0                    2019.5012331 2021.32085  0.09%     -   52s
+     0     0 2021.28049    0  828 2019.50123 2021.28049  0.09%     -   54s
+     0     0 2021.27963    0  818 2019.50123 2021.27963  0.09%     -   55s
+     0     0 2020.68695    0  838 2019.50123 2020.68695  0.06%     -   73s
+H    0     0                    2019.6282979 2020.68695  0.05%     -   75s
+     0     0 2020.65877    0  814 2019.62830 2020.65877  0.05%     -   78s
+     0     0 2020.65822    0  819 2019.62830 2020.65822  0.05%     -   79s
+     0     0 2020.65759    0  844 2019.62830 2020.65759  0.05%     -   81s
+     0     0 2020.65757    0  819 2019.62830 2020.65757  0.05%     -   82s
+     0     0 2020.56001    0  442 2019.62830 2020.56001  0.05%     -   90s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 501
+  Clique: 4029
+  MIR: 94
+  StrongCG: 3
+  Zero half: 282
+
+Explored 1 nodes (22786 simplex iterations) in 90.62 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.63 2019.5 2017.28 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019628297880e+03, best bound 2.020560011284e+03, gap 0.0461%
+ILP took 90692 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390525
+#CountingConstraintsAggregatingMoreThanOneClause: 5977
+#CountingConstraintsWithMoreThanOneLiteral: 390519
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400261
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 10 ----Sat Dec 15 18:00:22 IRST 2018
+add 93 constraints (total number = 390525)
+Optimize a model with 390525 rows, 11669 columns and 1175222 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390432 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 5s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 7.09s
+Presolved: 387848 rows, 10931 columns, 1165950 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398775 columns, 1176881 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167539e+03   0.000000e+00      9s
+   11672    2.0208951e+03   1.050229e+02   0.000000e+00     10s
+   14062    2.0230464e+03   4.137646e+01   0.000000e+00     15s
+   15741    2.0236576e+03   0.000000e+00   0.000000e+00     18s
+   15741    2.0236576e+03   0.000000e+00   0.000000e+00     18s
+   15741    2.0236576e+03   0.000000e+00   0.000000e+00     19s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023658e+03, 15741 iterations, 11.07 seconds
+Total elapsed time = 21.01s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.65764    0 1039 1323.32567 2023.65764  52.9%     -   25s
+H    0     0                    2004.9150019 2023.65764  0.93%     -   25s
+H    0     0                    2017.2830718 2023.65764  0.32%     -   26s
+     0     0 2021.18095    0 1048 2017.28307 2021.18095  0.19%     -   57s
+H    0     0                    2019.3743793 2021.18095  0.09%     -   60s
+     0     0 2021.18038    0 1028 2019.37438 2021.18038  0.09%     -   61s
+     0     0 2021.18033    0 1023 2019.37438 2021.18033  0.09%     -   62s
+     0     0 2020.43306    0  456 2019.37438 2020.43306  0.05%     -   79s
+H    0     0                    2019.8634356 2020.43306  0.03%     -   82s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 517
+  Clique: 4025
+  MIR: 127
+  StrongCG: 2
+  Zero half: 290
+
+Explored 1 nodes (22938 simplex iterations) in 82.40 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.86 2019.37 2017.28 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019863435557e+03, best bound 2.020433061588e+03, gap 0.0282%
+ILP took 82460 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390530
+#CountingConstraintsAggregatingMoreThanOneClause: 5979
+#CountingConstraintsWithMoreThanOneLiteral: 390524
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400406
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 11 ----Sat Dec 15 18:01:44 IRST 2018
+add 5 constraints (total number = 390530)
+Optimize a model with 390530 rows, 11669 columns and 1175375 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390525 by 71.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.65s
+Presolved: 387853 rows, 10931 columns, 1166103 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398780 columns, 1177034 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167404e+03   0.000000e+00      9s
+   11774    2.0209351e+03   9.541779e+01   0.000000e+00     10s
+   14292    2.0234079e+03   5.646907e+01   0.000000e+00     15s
+   15787    2.0235842e+03   0.000000e+00   0.000000e+00     19s
+   15787    2.0235842e+03   0.000000e+00   0.000000e+00     19s
+   15787    2.0235842e+03   0.000000e+00   0.000000e+00     19s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023584e+03, 15787 iterations, 11.97 seconds
+Total elapsed time = 21.33s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.58417    0 1038 1323.32567 2023.58417  52.9%     -   26s
+H    0     0                    2001.0665738 2023.58417  1.13%     -   26s
+H    0     0                    2015.9059971 2023.58417  0.38%     -   27s
+     0     0 2020.94340    0  899 2015.90600 2020.94340  0.25%     -   56s
+H    0     0                    2019.4305490 2020.94340  0.07%     -   59s
+     0     0 2020.93829    0  884 2019.43055 2020.93829  0.07%     -   60s
+     0     0 2020.93824    0  885 2019.43055 2020.93824  0.07%     -   61s
+     0     0 2020.46105    0  560 2019.43055 2020.46105  0.05%     -   77s
+H    0     0                    2019.8495530 2020.46105  0.03%     -   80s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 469
+  Clique: 4037
+  MIR: 122
+  StrongCG: 2
+  Zero half: 252
+
+Explored 1 nodes (22119 simplex iterations) in 80.06 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.85 2019.43 2015.91 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019849552982e+03, best bound 2.020461048305e+03, gap 0.0303%
+ILP took 80117 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390535
+#CountingConstraintsAggregatingMoreThanOneClause: 5980
+#CountingConstraintsWithMoreThanOneLiteral: 390529
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400482
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 12 ----Sat Dec 15 18:03:05 IRST 2018
+add 5 constraints (total number = 390535)
+Optimize a model with 390535 rows, 11669 columns and 1175460 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390530 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.54s
+Presolved: 387858 rows, 10931 columns, 1166188 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398785 columns, 1177119 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167282e+03   0.000000e+00      9s
+   11910    2.0211281e+03   4.532284e+01   0.000000e+00     10s
+   15059    2.0235141e+03   0.000000e+00   0.000000e+00     15s
+   15059    2.0235141e+03   0.000000e+00   0.000000e+00     15s
+   15059    2.0235141e+03   0.000000e+00   0.000000e+00     16s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023514e+03, 15059 iterations, 8.30 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.51411    0 1041 1323.32567 2023.51411  52.9%     -   20s
+H    0     0                    2004.7347151 2023.51411  0.94%     -   21s
+H    0     0                    2016.2692437 2023.51411  0.36%     -   22s
+     0     0 2021.13101    0  976 2016.26924 2021.13101  0.24%     -   54s
+H    0     0                    2019.6407625 2021.13101  0.07%     -   57s
+     0     0 2021.12474    0 1067 2019.64076 2021.12474  0.07%     -   59s
+     0     0 2021.12450    0 1066 2019.64076 2021.12450  0.07%     -   60s
+     0     0 2020.34344    0  430 2019.64076 2020.34344  0.03%     -   78s
+
+Cutting planes:
+  Gomory: 13
+  Cover: 561
+  Clique: 4026
+  MIR: 164
+  StrongCG: 3
+  Zero half: 361
+
+Explored 1 nodes (22692 simplex iterations) in 78.84 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.64 2016.27 2004.73 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019640762491e+03, best bound 2.020343441560e+03, gap 0.0348%
+ILP took 78900 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390542
+#CountingConstraintsAggregatingMoreThanOneClause: 5981
+#CountingConstraintsWithMoreThanOneLiteral: 390536
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400560
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 13 ----Sat Dec 15 18:04:24 IRST 2018
+add 7 constraints (total number = 390542)
+Optimize a model with 390542 rows, 11669 columns and 1175551 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390535 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.54s
+Presolved: 387865 rows, 10931 columns, 1166279 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398792 columns, 1177210 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167159e+03   0.000000e+00      9s
+   12101    2.0206882e+03   2.070257e+02   0.000000e+00     10s
+   14876    2.0233687e+03   2.158299e+01   0.000000e+00     15s
+   15229    2.0233901e+03   0.000000e+00   0.000000e+00     16s
+   15229    2.0233901e+03   0.000000e+00   0.000000e+00     16s
+   15229    2.0233901e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023390e+03, 15229 iterations, 9.65 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.39014    0 1009 1323.32567 2023.39014  52.9%     -   22s
+H    0     0                    2003.5686656 2023.39014  0.99%     -   22s
+H    0     0                    2016.5370690 2023.39014  0.34%     -   23s
+     0     0 2021.25828    0  934 2016.53707 2021.25828  0.23%     -   53s
+H    0     0                    2019.3392660 2021.25828  0.10%     -   56s
+     0     0 2021.22948    0  917 2019.33927 2021.22948  0.09%     -   58s
+     0     0 2021.22948    0  919 2019.33927 2021.22948  0.09%     -   59s
+     0     0 2020.42780    0  862 2019.33927 2020.42780  0.05%     -   77s
+H    0     0                    2019.7640523 2020.42780  0.03%     -   80s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 440
+  Clique: 3998
+  MIR: 91
+  StrongCG: 3
+  Zero half: 212
+
+Explored 1 nodes (22584 simplex iterations) in 80.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.76 2019.34 2016.54 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019764052229e+03, best bound 2.020427796404e+03, gap 0.0329%
+ILP took 80213 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390559
+#CountingConstraintsAggregatingMoreThanOneClause: 5981
+#CountingConstraintsWithMoreThanOneLiteral: 390553
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400577
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 14 ----Sat Dec 15 18:05:44 IRST 2018
+add 17 constraints (total number = 390559)
+Optimize a model with 390559 rows, 11669 columns and 1175602 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390542 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.58s
+Presolved: 387882 rows, 10931 columns, 1166330 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398809 columns, 1177261 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167159e+03   0.000000e+00      9s
+   12159    2.0210466e+03   7.537543e+01   0.000000e+00     10s
+   15640    2.0233876e+03   0.000000e+00   0.000000e+00     15s
+   15640    2.0233876e+03   0.000000e+00   0.000000e+00     15s
+   15640    2.0233876e+03   0.000000e+00   0.000000e+00     15s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023388e+03, 15640 iterations, 8.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.38758    0 1012 1323.32567 2023.38758  52.9%     -   20s
+H    0     0                    2004.5430473 2023.38758  0.94%     -   20s
+H    0     0                    2016.5000852 2023.38758  0.34%     -   21s
+     0     0 2020.84459    0  820 2016.50009 2020.84459  0.22%     -   50s
+H    0     0                    2019.2949431 2020.84459  0.08%     -   52s
+     0     0 2020.84198    0  825 2019.29494 2020.84198  0.08%     -   54s
+     0     0 2020.84173    0  820 2019.29494 2020.84173  0.08%     -   55s
+     0     0 2020.30741    0  835 2019.29494 2020.30741  0.05%     -   70s
+H    0     0                    2019.8405605 2020.30741  0.02%     -   73s
+
+Cutting planes:
+  Gomory: 14
+  Cover: 447
+  Clique: 4001
+  MIR: 119
+  StrongCG: 3
+  Zero half: 209
+
+Explored 1 nodes (22659 simplex iterations) in 73.30 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 2019.84 2019.29 2016.5 ... 1323.33
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019840560483e+03, best bound 2.020307413836e+03, gap 0.0231%
+ILP took 73354 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390560
+#CountingConstraintsAggregatingMoreThanOneClause: 5982
+#CountingConstraintsWithMoreThanOneLiteral: 390554
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400649
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 15 ----Sat Dec 15 18:06:58 IRST 2018
+add 1 constraints (total number = 390560)
+Optimize a model with 390560 rows, 11669 columns and 1175675 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390559 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.95s
+Presolved: 387883 rows, 10931 columns, 1166403 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398810 columns, 1177334 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.167045e+03   0.000000e+00      9s
+   11678    2.0206602e+03   4.525855e+01   0.000000e+00     10s
+   14644    2.0232675e+03   1.749915e+01   0.000000e+00     15s
+   15382    2.0233238e+03   0.000000e+00   0.000000e+00     17s
+   15382    2.0233238e+03   0.000000e+00   0.000000e+00     17s
+   15382    2.0233238e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023324e+03, 15382 iterations, 10.19 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.32384    0 1009 1323.32567 2023.32384  52.9%     -   23s
+H    0     0                    2006.3456627 2023.32384  0.85%     -   23s
+H    0     0                    2016.9278942 2023.32384  0.32%     -   24s
+     0     0 2020.89287    0 1082 2016.92789 2020.89287  0.20%     -   52s
+H    0     0                    2019.4063814 2020.89287  0.07%     -   56s
+     0     0 2020.88572    0 1094 2019.40638 2020.88572  0.07%     -   57s
+     0     0 2020.88523    0 1084 2019.40638 2020.88523  0.07%     -   59s
+     0     0 2020.19835    0  365 2019.40638 2020.19835  0.04%     -   75s
+
+Cutting planes:
+  Gomory: 12
+  Cover: 549
+  Clique: 4192
+  MIR: 244
+  StrongCG: 1
+  Zero half: 360
+
+Explored 1 nodes (22427 simplex iterations) in 75.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.41 2016.93 2006.35 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019406381445e+03, best bound 2.020198352817e+03, gap 0.0392%
+ILP took 75237 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390564
+#CountingConstraintsAggregatingMoreThanOneClause: 5983
+#CountingConstraintsWithMoreThanOneLiteral: 390558
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400723
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 16 ----Sat Dec 15 18:08:13 IRST 2018
+add 4 constraints (total number = 390564)
+Optimize a model with 390564 rows, 11669 columns and 1175756 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390560 by 71.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.90s
+Presolved: 387887 rows, 10931 columns, 1166483 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 4 rows and 4 columns
+Presolved: 10927 rows, 398814 columns, 1177414 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166943e+03   0.000000e+00      9s
+   11412    2.0205036e+03   7.912811e+01   0.000000e+00     10s
+   14720    2.0231751e+03   4.341056e+01   0.000000e+00     15s
+   15738    2.0232683e+03   0.000000e+00   0.000000e+00     18s
+   15738    2.0232683e+03   0.000000e+00   0.000000e+00     18s
+   15738    2.0232683e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023268e+03, 15738 iterations, 10.56 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.26832    0 1012 1323.32567 2023.26832  52.9%     -   23s
+H    0     0                    2005.5457483 2023.26832  0.88%     -   23s
+H    0     0                    2016.8073074 2023.26832  0.32%     -   24s
+     0     0 2020.81607    0  945 2016.80731 2020.81607  0.20%     -   55s
+H    0     0                    2019.4299265 2020.81607  0.07%     -   58s
+     0     0 2020.78422    0  934 2019.42993 2020.78422  0.07%     -   61s
+     0     0 2020.78414    0  933 2019.42993 2020.78414  0.07%     -   63s
+     0     0 2020.24813    0 1101 2019.42993 2020.24813  0.04%     -   81s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 549
+  Clique: 4448
+  MIR: 126
+  StrongCG: 3
+  Zero half: 381
+
+Explored 1 nodes (23926 simplex iterations) in 81.37 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.43 2016.81 2005.55 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019429926476e+03, best bound 2.020248129070e+03, gap 0.0405%
+ILP took 81421 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390582
+#CountingConstraintsAggregatingMoreThanOneClause: 5985
+#CountingConstraintsWithMoreThanOneLiteral: 390576
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400881
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 17 ----Sat Dec 15 18:09:34 IRST 2018
+add 18 constraints (total number = 390582)
+Optimize a model with 390582 rows, 11669 columns and 1175948 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390564 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.83s
+Presolved: 387905 rows, 10931 columns, 1166675 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 3 rows and 3 columns
+Presolved: 10928 rows, 398833 columns, 1177606 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166830e+03   0.000000e+00      9s
+   11870    2.0204877e+03   6.614622e+01   0.000000e+00     10s
+   15105    2.0231506e+03   6.426897e+00   0.000000e+00     15s
+   15708    2.0232052e+03   0.000000e+00   0.000000e+00     16s
+   15708    2.0232052e+03   0.000000e+00   0.000000e+00     17s
+   15708    2.0232052e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023205e+03, 15708 iterations, 9.49 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.20520    0 1013 1323.32567 2023.20520  52.9%     -   22s
+H    0     0                    2005.5445273 2023.20520  0.88%     -   23s
+H    0     0                    2017.2322741 2023.20520  0.30%     -   23s
+     0     0 2020.68621    0  931 2017.23227 2020.68621  0.17%     -   54s
+H    0     0                    2019.2828714 2020.68621  0.07%     -   57s
+     0     0 2020.68196    0  981 2019.28287 2020.68196  0.07%     -   59s
+     0     0 2020.68132    0  981 2019.28287 2020.68132  0.07%     -   60s
+     0     0 2020.21478    0  467 2019.28287 2020.21478  0.05%     -   78s
+
+Cutting planes:
+  Gomory: 8
+  Cover: 538
+  Clique: 4865
+  MIR: 160
+  StrongCG: 1
+  Zero half: 341
+
+Explored 1 nodes (23304 simplex iterations) in 78.13 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.28 2017.23 2005.54 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019282871370e+03, best bound 2.020214779307e+03, gap 0.0462%
+ILP took 78190 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390589
+#CountingConstraintsAggregatingMoreThanOneClause: 5986
+#CountingConstraintsWithMoreThanOneLiteral: 390583
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 400959
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 18 ----Sat Dec 15 18:10:53 IRST 2018
+add 7 constraints (total number = 390589)
+Optimize a model with 390589 rows, 11669 columns and 1176039 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390582 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.85s
+Presolved: 387912 rows, 10931 columns, 1166766 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 3 rows and 3 columns
+Presolved: 10928 rows, 398840 columns, 1177697 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166729e+03   0.000000e+00      9s
+   11702    2.0204767e+03   1.604720e+02   0.000000e+00     10s
+   15028    2.0230853e+03   8.888700e+00   0.000000e+00     15s
+   15680    2.0231482e+03   0.000000e+00   0.000000e+00     17s
+   15680    2.0231482e+03   0.000000e+00   0.000000e+00     17s
+   15680    2.0231482e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023148e+03, 15680 iterations, 9.51 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.14824    0 1012 1323.32567 2023.14824  52.9%     -   22s
+H    0     0                    2005.0693262 2023.14824  0.90%     -   22s
+H    0     0                    2017.7278534 2023.14824  0.27%     -   23s
+     0     0 2020.66986    0  912 2017.72785 2020.66986  0.15%     -   55s
+H    0     0                    2019.3438316 2020.66986  0.07%     -   58s
+     0     0 2020.65307    0  880 2019.34383 2020.65307  0.06%     -   60s
+     0     0 2020.65302    0  910 2019.34383 2020.65302  0.06%     -   61s
+     0     0 2020.18938    0  471 2019.34383 2020.18938  0.04%     -   77s
+
+Cutting planes:
+  Gomory: 18
+  Cover: 530
+  Clique: 4883
+  MIR: 148
+  StrongCG: 3
+  Zero half: 367
+
+Explored 1 nodes (22853 simplex iterations) in 77.31 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.34 2017.73 2005.07 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019343831588e+03, best bound 2.020189376595e+03, gap 0.0419%
+ILP took 77362 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390598
+#CountingConstraintsAggregatingMoreThanOneClause: 5987
+#CountingConstraintsWithMoreThanOneLiteral: 390592
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401039
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 19 ----Sat Dec 15 18:12:10 IRST 2018
+add 9 constraints (total number = 390598)
+Optimize a model with 390598 rows, 11669 columns and 1176136 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390589 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 6s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.84s
+Presolved: 387921 rows, 10931 columns, 1166863 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 3 rows and 3 columns
+Presolved: 10928 rows, 398849 columns, 1177794 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166636e+03   0.000000e+00      9s
+   11729    2.0205570e+03   8.528848e+01   0.000000e+00     10s
+   14473    2.0228948e+03   1.256004e+01   0.000000e+00     15s
+   15655    2.0230759e+03   0.000000e+00   0.000000e+00     17s
+   15655    2.0230759e+03   0.000000e+00   0.000000e+00     17s
+   15655    2.0230759e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023076e+03, 15655 iterations, 10.44 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.07592    0 1011 1323.32567 2023.07592  52.9%     -   24s
+H    0     0                    2002.7779030 2023.07592  1.01%     -   24s
+H    0     0                    2016.5477002 2023.07592  0.32%     -   25s
+     0     0 2020.78230    0  903 2016.54770 2020.78230  0.21%     -   53s
+H    0     0                    2019.3917709 2020.78230  0.07%     -   56s
+     0     0 2020.78213    0  902 2019.39177 2020.78213  0.07%     -   57s
+     0     0 2020.08715    0  862 2019.39177 2020.08715  0.03%     -   77s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 537
+  Clique: 4874
+  MIR: 112
+  Zero half: 357
+
+Explored 1 nodes (23376 simplex iterations) in 77.79 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.39 2016.55 2002.78 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019391770864e+03, best bound 2.020087146381e+03, gap 0.0344%
+ILP took 77838 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390603
+#CountingConstraintsAggregatingMoreThanOneClause: 5988
+#CountingConstraintsWithMoreThanOneLiteral: 390597
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401115
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 20 ----Sat Dec 15 18:13:28 IRST 2018
+add 5 constraints (total number = 390603)
+Optimize a model with 390603 rows, 11669 columns and 1176221 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390598 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2677 rows and 738 columns (presolve time = 5s) ...
+Presolve removed 2677 rows and 738 columns
+Presolve time: 6.98s
+Presolved: 387926 rows, 10931 columns, 1166948 nonzeros
+Variable types: 0 continuous, 10931 integer (10931 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 3 rows and 3 columns
+Presolved: 10928 rows, 398854 columns, 1177879 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166547e+03   0.000000e+00      9s
+   11309    2.0202402e+03   1.093528e+02   0.000000e+00     10s
+   14184    2.0228586e+03   8.650860e+01   0.000000e+00     15s
+   15408    2.0230252e+03   0.000000e+00   0.000000e+00     18s
+   15408    2.0230252e+03   0.000000e+00   0.000000e+00     18s
+   15408    2.0230252e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.023025e+03, 15408 iterations, 10.62 seconds
+Total elapsed time = 20.41s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2023.02525    0 1003 1323.32567 2023.02525  52.9%     -   25s
+H    0     0                    2002.6883110 2023.02525  1.02%     -   25s
+H    0     0                    2016.3283830 2023.02525  0.33%     -   26s
+     0     0 2020.68143    0  972 2016.32838 2020.68143  0.22%     -   54s
+H    0     0                    2019.3596595 2020.68143  0.07%     -   57s
+     0     0 2020.67296    0  950 2019.35966 2020.67296  0.07%     -   58s
+     0     0 2020.67128    0  962 2019.35966 2020.67128  0.06%     -   60s
+     0     0 2020.07850    0  935 2019.35966 2020.07850  0.04%     -   78s
+
+Cutting planes:
+  Gomory: 12
+  Cover: 532
+  Clique: 4896
+  MIR: 169
+  StrongCG: 2
+  Zero half: 348
+
+Explored 1 nodes (23128 simplex iterations) in 78.79 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.36 2016.33 2002.69 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019359659480e+03, best bound 2.020078502601e+03, gap 0.0356%
+ILP took 78838 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390633
+#CountingConstraintsAggregatingMoreThanOneClause: 5989
+#CountingConstraintsWithMoreThanOneLiteral: 390627
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401213
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 21 ----Sat Dec 15 18:14:47 IRST 2018
+add 30 constraints (total number = 390633)
+Optimize a model with 390633 rows, 11669 columns and 1176378 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390603 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2429 rows and 735 columns (presolve time = 6s) ...
+Presolve removed 2429 rows and 735 columns
+Presolve time: 6.92s
+Presolved: 388204 rows, 10934 columns, 1167846 nonzeros
+Variable types: 0 continuous, 10934 integer (10934 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10932 rows, 399136 columns, 1178780 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166476e+03   0.000000e+00      9s
+   11678    2.0206759e+03   5.718365e+01   0.000000e+00     10s
+   14912    2.0229032e+03   1.812189e+01   0.000000e+00     15s
+   15665    2.0229925e+03   0.000000e+00   0.000000e+00     17s
+   15665    2.0229925e+03   0.000000e+00   0.000000e+00     17s
+   15665    2.0229925e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022993e+03, 15665 iterations, 10.37 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.99252    0 1014 1323.32567 2022.99252  52.9%     -   24s
+H    0     0                    2003.7770447 2022.99252  0.96%     -   24s
+H    0     0                    2017.5211028 2022.99252  0.27%     -   25s
+     0     0 2020.65152    0  954 2017.52110 2020.65152  0.16%     -   56s
+H    0     0                    2019.2870792 2020.65152  0.07%     -   60s
+     0     0 2020.64595    0  918 2019.28708 2020.64595  0.07%     -   61s
+     0     0 2020.64564    0  927 2019.28708 2020.64564  0.07%     -   63s
+     0     0 2020.64557    0  926 2019.28708 2020.64557  0.07%     -   64s
+     0     0 2020.16628    0  298 2019.28708 2020.16628  0.04%     -   80s
+
+Cutting planes:
+  Gomory: 14
+  Cover: 531
+  Clique: 4844
+  MIR: 137
+  StrongCG: 1
+  Zero half: 339
+
+Explored 1 nodes (22254 simplex iterations) in 80.68 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.29 2017.52 2003.78 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019287079246e+03, best bound 2.020166282779e+03, gap 0.0435%
+ILP took 80740 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390638
+#CountingConstraintsAggregatingMoreThanOneClause: 5990
+#CountingConstraintsWithMoreThanOneLiteral: 390632
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401289
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 22 ----Sat Dec 15 18:16:08 IRST 2018
+add 5 constraints (total number = 390638)
+Optimize a model with 390638 rows, 11669 columns and 1176463 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390633 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2429 rows and 735 columns (presolve time = 5s) ...
+Presolve removed 2429 rows and 735 columns
+Presolve time: 7.23s
+Presolved: 388209 rows, 10934 columns, 1167931 nonzeros
+Variable types: 0 continuous, 10934 integer (10934 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10932 rows, 399141 columns, 1178865 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166413e+03   0.000000e+00     10s
+   10630    2.0194960e+03   1.447662e+02   0.000000e+00     10s
+   14512    2.0228629e+03   6.718367e+01   0.000000e+00     15s
+   15467    2.0229574e+03   0.000000e+00   0.000000e+00     18s
+   15467    2.0229574e+03   0.000000e+00   0.000000e+00     18s
+   15467    2.0229574e+03   0.000000e+00   0.000000e+00     19s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022957e+03, 15467 iterations, 10.48 seconds
+Total elapsed time = 20.30s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.95737    0 1014 1323.32567 2022.95737  52.9%     -   25s
+H    0     0                    2004.1995187 2022.95737  0.94%     -   25s
+H    0     0                    2016.8185424 2022.95737  0.30%     -   26s
+     0     0 2020.49782    0  787 2016.81854 2020.49782  0.18%     -   62s
+H    0     0                    2019.1944776 2020.49782  0.06%     -   66s
+     0     0 2020.49349    0  737 2019.19448 2020.49349  0.06%     -   67s
+     0     0 2020.04929    0  844 2019.19448 2020.04929  0.04%     -   82s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 522
+  Clique: 4884
+  MIR: 125
+  StrongCG: 1
+  Zero half: 366
+
+Explored 1 nodes (22744 simplex iterations) in 82.94 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.19 2016.82 2004.2 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019194477642e+03, best bound 2.020049287098e+03, gap 0.0423%
+ILP took 82986 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390648
+#CountingConstraintsAggregatingMoreThanOneClause: 5991
+#CountingConstraintsWithMoreThanOneLiteral: 390642
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401369
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 23 ----Sat Dec 15 18:17:31 IRST 2018
+add 10 constraints (total number = 390648)
+Optimize a model with 390648 rows, 11669 columns and 1176561 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390638 by 71.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2347 rows and 733 columns (presolve time = 6s) ...
+Presolve removed 2347 rows and 733 columns
+Presolve time: 6.92s
+Presolved: 388301 rows, 10936 columns, 1168278 nonzeros
+Variable types: 0 continuous, 10936 integer (10936 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10934 rows, 399235 columns, 1179214 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.166025e+03   0.000000e+00      9s
+   11708    2.0200544e+03   5.252343e+01   0.000000e+00     10s
+   14803    2.0228870e+03   5.740703e+00   0.000000e+00     15s
+   15307    2.0229279e+03   0.000000e+00   0.000000e+00     17s
+   15307    2.0229279e+03   0.000000e+00   0.000000e+00     17s
+   15307    2.0229279e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022928e+03, 15307 iterations, 9.78 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.92788    0 1010 1323.32567 2022.92788  52.9%     -   23s
+H    0     0                    2007.1328298 2022.92788  0.79%     -   23s
+H    0     0                    2016.1195849 2022.92788  0.34%     -   24s
+     0     0 2020.60352    0  874 2016.11958 2020.60352  0.22%     -   56s
+H    0     0                    2019.3440919 2020.60352  0.06%     -   59s
+     0     0 2020.57727    0  841 2019.34409 2020.57727  0.06%     -   61s
+     0     0 2020.57687    0  847 2019.34409 2020.57687  0.06%     -   63s
+     0     0 2020.12311    0  829 2019.34409 2020.12311  0.04%     -   79s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 546
+  Clique: 4829
+  MIR: 136
+  StrongCG: 1
+  Zero half: 405
+
+Explored 1 nodes (22606 simplex iterations) in 79.88 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.34 2016.12 2007.13 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019344091869e+03, best bound 2.020123112014e+03, gap 0.0386%
+ILP took 79935 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390655
+#CountingConstraintsAggregatingMoreThanOneClause: 5992
+#CountingConstraintsWithMoreThanOneLiteral: 390649
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401447
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 24 ----Sat Dec 15 18:18:51 IRST 2018
+add 7 constraints (total number = 390655)
+Optimize a model with 390655 rows, 11669 columns and 1176652 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390648 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.79s
+Presolved: 388377 rows, 10937 columns, 1168575 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399312 columns, 1179512 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165978e+03   0.000000e+00      9s
+   12075    2.0205045e+03   5.236261e+01   0.000000e+00     10s
+   15113    2.0228587e+03   6.371809e+01   0.000000e+00     15s
+   15511    2.0229049e+03   0.000000e+00   0.000000e+00     17s
+   15511    2.0229049e+03   0.000000e+00   0.000000e+00     17s
+   15511    2.0229049e+03   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022905e+03, 15511 iterations, 9.72 seconds
+Total elapsed time = 20.38s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.90494    0 1011 1323.32567 2022.90494  52.9%     -   24s
+H    0     0                    2005.5147290 2022.90494  0.87%     -   24s
+H    0     0                    2016.3897111 2022.90494  0.32%     -   25s
+     0     0 2020.71929    0  935 2016.38971 2020.71929  0.21%     -   53s
+H    0     0                    2019.1580972 2020.71929  0.08%     -   57s
+     0     0 2020.71708    0  923 2019.15810 2020.71708  0.08%     -   58s
+     0     0 2020.71693    0  915 2019.15810 2020.71693  0.08%     -   59s
+     0     0 2019.97161    0  917 2019.15810 2019.97161  0.04%     -   79s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 551
+  Clique: 4739
+  MIR: 171
+  StrongCG: 2
+  Zero half: 354
+
+Explored 1 nodes (23631 simplex iterations) in 79.39 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.16 2016.39 2005.51 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019158097250e+03, best bound 2.019971612835e+03, gap 0.0403%
+ILP took 79439 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390668
+#CountingConstraintsAggregatingMoreThanOneClause: 5993
+#CountingConstraintsWithMoreThanOneLiteral: 390662
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401531
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 25 ----Sat Dec 15 18:20:11 IRST 2018
+add 13 constraints (total number = 390668)
+Optimize a model with 390668 rows, 11669 columns and 1176761 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390655 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.78s
+Presolved: 388390 rows, 10937 columns, 1168684 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399325 columns, 1179621 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165932e+03   0.000000e+00      9s
+   11691    2.0203728e+03   5.225295e+01   0.000000e+00     10s
+   15002    2.0228649e+03   9.638661e-01   0.000000e+00     15s
+   15147    2.0228660e+03   0.000000e+00   0.000000e+00     16s
+   15147    2.0228660e+03   0.000000e+00   0.000000e+00     16s
+   15147    2.0228660e+03   0.000000e+00   0.000000e+00     16s
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022866e+03, 15147 iterations, 8.85 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.86600    0 1007 1323.32567 2022.86600  52.9%     -   22s
+H    0     0                    2005.6753253 2022.86600  0.86%     -   22s
+H    0     0                    2016.2761406 2022.86600  0.33%     -   23s
+     0     0 2020.49326    0  745 2016.27614 2020.49326  0.21%     -   53s
+H    0     0                    2019.2468148 2020.49326  0.06%     -   56s
+     0     0 2020.48480    0  770 2019.24681 2020.48480  0.06%     -   58s
+     0     0 2020.48071    0  726 2019.24681 2020.48071  0.06%     -   59s
+     0     0 2020.48066    0  733 2019.24681 2020.48066  0.06%     -   61s
+     0     0 2019.99057    0  860 2019.24681 2019.99057  0.04%     -   76s
+
+Cutting planes:
+  Gomory: 7
+  Cover: 507
+  Clique: 4789
+  MIR: 97
+  StrongCG: 2
+  Zero half: 373
+
+Explored 1 nodes (22547 simplex iterations) in 76.10 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.25 2016.28 2005.68 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019246814825e+03, best bound 2.019990571813e+03, gap 0.0368%
+ILP took 76166 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390670
+#CountingConstraintsAggregatingMoreThanOneClause: 5994
+#CountingConstraintsWithMoreThanOneLiteral: 390664
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401604
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 26 ----Sat Dec 15 18:21:27 IRST 2018
+add 2 constraints (total number = 390670)
+Optimize a model with 390670 rows, 11669 columns and 1176837 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390668 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.81s
+Presolved: 388392 rows, 10937 columns, 1168760 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399327 columns, 1179697 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165896e+03   0.000000e+00      9s
+   11645    2.0203861e+03   6.064733e+01   0.000000e+00     10s
+   14950    2.0228455e+03   6.510723e-02   0.000000e+00     15s
+   14992    2.0228461e+03   0.000000e+00   0.000000e+00     15s
+   14992    2.0228461e+03   0.000000e+00   0.000000e+00     16s
+   14992    2.0228461e+03   0.000000e+00   0.000000e+00     16s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022846e+03, 14992 iterations, 8.61 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.84612    0 1007 1323.32567 2022.84612  52.9%     -   23s
+H    0     0                    2004.3148137 2022.84612  0.92%     -   23s
+H    0     0                    2017.0267941 2022.84612  0.29%     -   24s
+     0     0 2020.53140    0  980 2017.02679 2020.53140  0.17%     -   59s
+H    0     0                    2019.1788872 2020.53140  0.07%     -   63s
+     0     0 2020.52576    0  937 2019.17889 2020.52576  0.07%     -   64s
+     0     0 2020.52515    0  896 2019.17889 2020.52515  0.07%     -   66s
+     0     0 2020.52467    0  940 2019.17889 2020.52467  0.07%     -   67s
+     0     0 2020.52465    0  946 2019.17889 2020.52465  0.07%     -   68s
+     0     0 2019.92098    0  368 2019.17889 2019.92098  0.04%     -   86s
+
+Cutting planes:
+  Gomory: 14
+  Cover: 550
+  Clique: 4913
+  MIR: 186
+  StrongCG: 2
+  Zero half: 370
+
+Explored 1 nodes (23106 simplex iterations) in 86.69 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.18 2017.03 2004.31 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019178887184e+03, best bound 2.019920983363e+03, gap 0.0368%
+ILP took 86743 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390674
+#CountingConstraintsAggregatingMoreThanOneClause: 5995
+#CountingConstraintsWithMoreThanOneLiteral: 390668
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401679
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 27 ----Sat Dec 15 18:22:54 IRST 2018
+add 4 constraints (total number = 390674)
+Optimize a model with 390674 rows, 11669 columns and 1176919 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390670 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.63s
+Presolved: 388396 rows, 10937 columns, 1168841 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399331 columns, 1179778 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165866e+03   0.000000e+00      9s
+   11828    2.0204016e+03   2.059861e+02   0.000000e+00     10s
+   14538    2.0227151e+03   1.080333e+01   0.000000e+00     15s
+   15675    2.0228297e+03   0.000000e+00   0.000000e+00     19s
+   15675    2.0228297e+03   0.000000e+00   0.000000e+00     19s
+   15675    2.0228297e+03   0.000000e+00   0.000000e+00     20s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022830e+03, 15675 iterations, 12.34 seconds
+Total elapsed time = 21.58s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.82968    0 1007 1323.32567 2022.82968  52.9%     -   26s
+H    0     0                    2003.6498656 2022.82968  0.96%     -   26s
+H    0     0                    2016.9961885 2022.82968  0.29%     -   27s
+     0     0 2020.46510    0 1104 2016.99619 2020.46510  0.17%     -   68s
+H    0     0                    2019.2941100 2020.46510  0.06%     -   71s
+     0     0 2020.44406    0  919 2019.29411 2020.44406  0.06%     -   74s
+     0     0 2020.43703    0 1085 2019.29411 2020.43703  0.06%     -   75s
+     0     0 2020.43651    0 1178 2019.29411 2020.43651  0.06%     -   77s
+     0     0 2020.43643    0 1175 2019.29411 2020.43643  0.06%     -   78s
+     0     0 2019.87223    0  680 2019.29411 2019.87223  0.03%     -   97s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 527
+  Clique: 4837
+  MIR: 189
+  Zero half: 359
+
+Explored 1 nodes (24627 simplex iterations) in 97.90 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.29 2017 2003.65 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019294110014e+03, best bound 2.019872226734e+03, gap 0.0286%
+ILP took 97950 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390677
+#CountingConstraintsAggregatingMoreThanOneClause: 5996
+#CountingConstraintsWithMoreThanOneLiteral: 390671
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401753
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 28 ----Sat Dec 15 18:24:32 IRST 2018
+add 3 constraints (total number = 390677)
+Optimize a model with 390677 rows, 11669 columns and 1176998 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390674 by 72.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.88s
+Presolved: 388399 rows, 10937 columns, 1168920 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399334 columns, 1179857 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165845e+03   0.000000e+00      9s
+   11543    2.0199703e+03   7.096258e+01   0.000000e+00     10s
+   14726    2.0227705e+03   1.520605e+01   0.000000e+00     15s
+   15416    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+   15416    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+   15416    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022819e+03, 15416 iterations, 10.71 seconds
+Total elapsed time = 20.41s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.81925    0 1007 1323.32567 2022.81925  52.9%     -   25s
+H    0     0                    2002.7570283 2022.81925  1.00%     -   25s
+H    0     0                    2017.2804100 2022.81925  0.27%     -   26s
+     0     0 2020.39760    0  937 2017.28041 2020.39760  0.15%     -   60s
+H    0     0                    2019.3251761 2020.39760  0.05%     -   64s
+     0     0 2020.39611    0  907 2019.32518 2020.39611  0.05%     -   65s
+     0     0 2020.39610    0  907 2019.32518 2020.39610  0.05%     -   66s
+     0     0 2019.91299    0  409 2019.32518 2019.91299  0.03%     -   81s
+
+Cutting planes:
+  Gomory: 8
+  Cover: 552
+  Clique: 5140
+  MIR: 125
+  StrongCG: 1
+  Zero half: 347
+
+Explored 1 nodes (22521 simplex iterations) in 81.98 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.33 2017.28 2002.76 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019325176062e+03, best bound 2.019912986137e+03, gap 0.0291%
+ILP took 82038 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390679
+#CountingConstraintsAggregatingMoreThanOneClause: 5996
+#CountingConstraintsWithMoreThanOneLiteral: 390673
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401755
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+---- Start  Loop 29 ----Sat Dec 15 18:25:54 IRST 2018
+add 2 constraints (total number = 390679)
+Optimize a model with 390679 rows, 11669 columns and 1177003 nonzeros
+Variable types: 0 continuous, 11669 integer (11669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+01]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+01]
+
+MIP start did not produce a new incumbent solution
+MIP start violates constraint R390677 by 1.000000000
+
+Found heuristic solution: objective 1323.3256681
+Presolve removed 2278 rows and 732 columns (presolve time = 6s) ...
+Presolve removed 2278 rows and 732 columns
+Presolve time: 6.85s
+Presolved: 388401 rows, 10937 columns, 1168925 nonzeros
+Variable types: 0 continuous, 10937 integer (10937 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolve removed 2 rows and 2 columns
+Presolved: 10935 rows, 399336 columns, 1179862 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.4557476e+02   2.165845e+03   0.000000e+00      9s
+   11700    2.0203211e+03   7.558315e+01   0.000000e+00     10s
+   14089    2.0224309e+03   1.364325e+02   0.000000e+00     15s
+   15438    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+   15438    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+   15438    2.0228192e+03   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 2.022819e+03, 15438 iterations, 10.78 seconds
+Total elapsed time = 20.21s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2022.81925    0 1008 1323.32567 2022.81925  52.9%     -   24s
+H    0     0                    2003.7628349 2022.81925  0.95%     -   25s
+H    0     0                    2016.6428720 2022.81925  0.31%     -   26s
+     0     0 2020.45850    0  836 2016.64287 2020.45850  0.19%     -   60s
+H    0     0                    2019.2300480 2020.45850  0.06%     -   62s
+     0     0 2020.44618    0  828 2019.23005 2020.44618  0.06%     -   63s
+     0     0 2020.44165    0  828 2019.23005 2020.44165  0.06%     -   65s
+     0     0 2020.44163    0  824 2019.23005 2020.44163  0.06%     -   66s
+     0     0 2019.92928    0  396 2019.23005 2019.92928  0.03%     -   83s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 540
+  Clique: 5161
+  MIR: 137
+  StrongCG: 1
+  Zero half: 434
+
+Explored 1 nodes (22978 simplex iterations) in 83.56 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2019.23 2016.64 2003.76 1323.33 
+
+Optimal solution found (tolerance 5.00e-04)
+Best objective 2.019230048048e+03, best bound 2.019929283572e+03, gap 0.0346%
+ILP took 83608 Milliseconds.
+#AggregatedHardFormulas: 6
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 390679
+#CountingConstraintsAggregatingMoreThanOneClause: 5996
+#CountingConstraintsWithMoreThanOneLiteral: 390673
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 401755
+#CountingConstraintsWithOneLiteral: 6
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 297
+#ZVariables: 0
+#BinaryVariables: 11669
+
+Total ILP Time: 3314011
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Sat Dec 15 18:27:19 IRST 2018
+........................PutDataIntoTables duration: 105
+
+Number of formulas: 21
+#Hard Formulas: 15
+#Soft Formulas: 0
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 0
+#Objective Formulas: 6
+#Cardinality Formulas: 0
+22196 evidence atoms
+Grounding took: 452ms
+Soft objective 2019.230048047616
+Hard objective 1.0195222796E10
+Evaluation took: 728ms
+data/ELOGatIJCAJ2011/ekaw_mechanical_turk_prog.mln;data/ELOGatIJCAJ2011/ekaw_mechanical_turk_large_evidence.db;5.0E-4;z aggr;cpi;;runtime;3328702;objective;2019.230048047616;hardObjective;1.0195222796E10
+Iteration finished. Run Time: 3328702, ILP Time: 3314011
+#iterations: 1
+Average Runtime: 3328702
+Average ILP Time: 3314011
+==========================
+
+data/ELOGatIJCAJ2011/ekaw_mechanical_turk_prog.mln;data/ELOGatIJCAJ2011/ekaw_mechanical_turk_large_evidence.db;5.0E-4;z aggr;cpi;;runtime;3328702;objective;2019.230048047616;hardObjective;1.0195222796E10
+duration:3328702
+

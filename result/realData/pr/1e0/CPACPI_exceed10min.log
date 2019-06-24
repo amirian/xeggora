@@ -1,0 +1,586 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/pr/prog.mln;data/pr/evidence.db;1.0;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sat Dec 08 19:59:03 IRST 2018
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 640
+
+Number of formulas: 1733
+#Hard Formulas: 1
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+18132 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Sat Dec 08 19:59:30 IRST 2018
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 1
+#CountingConstraintsAggregatingMoreThanOneClause: 1
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 1
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 4579
+#ZVariables: 0
+#BinaryVariables: 4579
+
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 1689
+#AggregatedClauses: 1199911
+#CountingConstraintsAggregatingMoreThanOneClause: 716
+#CountingConstraintsWithMoreThanOneLiteral: 1199119
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1199119
+#CountingConstraintsWithOneLiteral: 792
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 210131
+#ZVariables: 1199910
+#BinaryVariables: 1273661
+
+---- Start  Loop 0 ----Sat Dec 08 19:59:46 IRST 2018
+add 2399030 constraints (total number = 2399030)
+Optimize a model with 2399030 rows, 1274376 columns and 5007398 nonzeros
+Variable types: 0 continuous, 1274376 integer (1273661 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-04, 5e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+Found heuristic solution: objective -125573.0075
+Found heuristic solution: objective -119053.0907
+Presolve removed 792 rows and 5370 columns (presolve time = 6s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 10s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 15s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 20s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 25s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 30s) ...
+Presolve removed 792 rows and 5370 columns (presolve time = 39s) ...
+Presolve removed 114878 rows and 66245 columns (presolve time = 46s) ...
+Presolve removed 114878 rows and 66245 columns
+Presolve time: 45.86s
+Presolved: 2284152 rows, 1208131 columns, 4568304 nonzeros
+Found heuristic solution: objective -83721.95369
+Found heuristic solution: objective -81395.09175
+Variable types: 0 continuous, 1208131 integer (1208131 binary)
+
+Explored 0 nodes (0 simplex iterations) in 48.87 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: -81395.1 -83722 -116923 -122007 
+
+Optimal solution found (tolerance 1.00e+00)
+Best objective -8.139509174617e+04, best bound -2.039557016945e+03, gap 97.4943%
+ILP took 56308 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 3346
+#AggregatedClauses: 1440963
+#CountingConstraintsAggregatingMoreThanOneClause: 1328
+#CountingConstraintsWithMoreThanOneLiteral: 1439447
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1439447
+#CountingConstraintsWithOneLiteral: 1516
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 251225
+#ZVariables: 1440962
+#BinaryVariables: 1514101
+
+---- Start  Loop 1 ----Sat Dec 08 20:00:49 IRST 2018
+add 241052 constraints (total number = 2640082)
+Optimize a model with 2640082 rows, 1515428 columns and 5770200 nonzeros
+Variable types: 0 continuous, 1515428 integer (1514101 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 7e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+
+MIP start produced solution with objective -81533.7 (0.54s)
+Loaded MIP start with objective -81533.7
+
+Presolve removed 1516 rows and 6094 columns (presolve time = 6s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 10s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 15s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 20s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 26s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 30s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 35s) ...
+Presolve removed 1516 rows and 6094 columns (presolve time = 46s) ...
+Presolve removed 29649 rows and 22237 columns (presolve time = 55s) ...
+Presolve removed 29649 rows and 22237 columns
+Presolve time: 54.95s
+Presolved: 2610433 rows, 1493191 columns, 5458893 nonzeros
+Found heuristic solution: objective -72103.37252
+Variable types: 0 continuous, 1493191 integer (1493191 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 7s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 14s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 16s) ...
+Presolved: 2610433 rows, 1493191 columns, 5458893 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 5s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 55s
+Elapsed ordering time = 60s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Elapsed ordering time = 85s
+Elapsed ordering time = 90s
+Ordering time: 93.22s
+
+Barrier statistics:
+ AA' NZ     : 5.981e+07
+ Factor NZ  : 4.470e+08 (roughly 5.0 GBytes of memory)
+ Factor Ops : 1.383e+11 (roughly 11 seconds per iteration)
+ Threads    : 2
+
+Barrier performed 0 iterations in 192.04 seconds
+Error termination
+
+
+
+Root relaxation: unknown termination status, 0 iterations, 545.99 seconds
+
+Explored 0 nodes (0 simplex iterations) in 607.63 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -72103.4 -81292.9 
+
+Time limit reached
+Best objective -7.210337251607e+04, best bound 3.740377262298e+04, gap 151.8752%
+ILP took 618507 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 5003
+#AggregatedClauses: 1470622
+#CountingConstraintsAggregatingMoreThanOneClause: 1444
+#CountingConstraintsWithMoreThanOneLiteral: 1468962
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1468962
+#CountingConstraintsWithOneLiteral: 1660
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 251953
+#ZVariables: 1470621
+#BinaryVariables: 1543644
+
+---- Start  Loop 2 ----Sat Dec 08 20:11:19 IRST 2018
+add 29659 constraints (total number = 2669741)
+Optimize a model with 2669741 rows, 1545087 columns and 5859617 nonzeros
+Variable types: 0 continuous, 1545087 integer (1543644 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 7e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+
+MIP start produced solution with objective -72104 (3.24s)
+Loaded MIP start with objective -72104
+Processed MIP start in 3.41 seconds
+
+Presolve removed 53 rows and 4631 columns (presolve time = 11s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 16s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 20s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 25s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 30s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 37s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 40s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 45s) ...
+Presolve removed 1660 rows and 6238 columns (presolve time = 60s) ...
+Presolve removed 13682 rows and 13376 columns (presolve time = 71s) ...
+Presolve removed 13682 rows and 13376 columns
+Presolve time: 70.78s
+Presolved: 2656059 rows, 1531711 columns, 5580479 nonzeros
+Found heuristic solution: objective -71805.01432
+Variable types: 0 continuous, 1531711 integer (1531711 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolved: 2656059 rows, 1531711 columns, 5580479 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 9s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 57s
+Elapsed ordering time = 60s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Elapsed ordering time = 85s
+Elapsed ordering time = 90s
+Elapsed ordering time = 95s
+Elapsed ordering time = 100s
+Elapsed ordering time = 105s
+Elapsed ordering time = 110s
+Elapsed ordering time = 115s
+Ordering time: 122.34s
+
+Barrier statistics:
+ AA' NZ     : 6.243e+07
+ Factor NZ  : 4.667e+08 (roughly 5.0 GBytes of memory)
+ Factor Ops : 1.471e+11 (roughly 13 seconds per iteration)
+ Threads    : 2
+
+Barrier performed 0 iterations in 254.67 seconds
+Error termination
+
+
+
+Root relaxation: unknown termination status, 0 iterations, 520.84 seconds
+
+Explored 0 nodes (0 simplex iterations) in 603.85 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -71805 -71974.8 
+
+Time limit reached
+Best objective -7.180501432144e+04, best bound 4.168301987854e+04, gap 158.0503%
+ILP took 615069 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 6660
+#AggregatedClauses: 1471384
+#CountingConstraintsAggregatingMoreThanOneClause: 1532
+#CountingConstraintsWithMoreThanOneLiteral: 1469593
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1469593
+#CountingConstraintsWithOneLiteral: 1791
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 252251
+#ZVariables: 1471383
+#BinaryVariables: 1544318
+
+---- Start  Loop 3 ----Sat Dec 08 20:21:41 IRST 2018
+add 762 constraints (total number = 2670503)
+Optimize a model with 2670503 rows, 1545849 columns and 5861939 nonzeros
+Variable types: 0 continuous, 1545849 integer (1544318 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 7e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+
+MIP start produced solution with objective -71805 (4.35s)
+Loaded MIP start with objective -71805
+Processed MIP start in 4.39 seconds
+
+Presolve removed 131 rows and 4709 columns (presolve time = 9s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 12s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 15s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 20s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 25s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 32s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 35s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 40s) ...
+Presolve removed 1791 rows and 6369 columns (presolve time = 55s) ...
+Presolve removed 7729 rows and 10025 columns (presolve time = 62s) ...
+Presolve removed 7729 rows and 10025 columns
+Presolve time: 61.84s
+Presolved: 2662774 rows, 1535824 columns, 5595022 nonzeros
+Found heuristic solution: objective -71710.14245
+Variable types: 0 continuous, 1535824 integer (1535824 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 12s) ...
+Presolved: 2662774 rows, 1535824 columns, 5595022 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 5s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 55s
+Elapsed ordering time = 60s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Elapsed ordering time = 85s
+Elapsed ordering time = 90s
+Elapsed ordering time = 95s
+Elapsed ordering time = 100s
+Elapsed ordering time = 105s
+Elapsed ordering time = 110s
+Ordering time: 116.38s
+
+Barrier statistics:
+ AA' NZ     : 6.259e+07
+ Factor NZ  : 4.677e+08 (roughly 5.0 GBytes of memory)
+ Factor Ops : 1.474e+11 (roughly 14 seconds per iteration)
+ Threads    : 2
+
+Barrier performed 0 iterations in 236.23 seconds
+Error termination
+
+
+
+Root relaxation: unknown termination status, 0 iterations, 530.18 seconds
+
+Explored 0 nodes (0 simplex iterations) in 606.99 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -71710.1 -71741.1 
+
+Time limit reached
+Best objective -7.171014245116e+04, best bound 4.203360401736e+04, gap 158.6160%
+ILP took 616581 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 8317
+#AggregatedClauses: 1471440
+#CountingConstraintsAggregatingMoreThanOneClause: 1541
+#CountingConstraintsWithMoreThanOneLiteral: 1469634
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1469634
+#CountingConstraintsWithOneLiteral: 1806
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 252275
+#ZVariables: 1471439
+#BinaryVariables: 1544365
+
+---- Start  Loop 4 ----Sat Dec 08 20:32:05 IRST 2018
+add 56 constraints (total number = 2670559)
+Optimize a model with 2670559 rows, 1545905 columns and 5862101 nonzeros
+Variable types: 0 continuous, 1545905 integer (1544365 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 7e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+
+MIP start produced solution with objective -71710.1 (2.23s)
+Loaded MIP start with objective -71710.1
+Processed MIP start in 2.44 seconds
+
+Presolve removed 140 rows and 4718 columns (presolve time = 12s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 15s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 20s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 25s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 30s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 35s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 40s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 45s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 63s) ...
+Presolve removed 6736 rows and 9427 columns (presolve time = 71s) ...
+Presolve removed 6736 rows and 9427 columns
+Presolve time: 71.13s
+Presolved: 2663823 rows, 1536478 columns, 5597315 nonzeros
+Found heuristic solution: objective -71702.53493
+Variable types: 0 continuous, 1536478 integer (1536478 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 25s) ...
+Presolved: 2663823 rows, 1536478 columns, 5597315 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 10s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 64s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Elapsed ordering time = 85s
+Elapsed ordering time = 90s
+Elapsed ordering time = 95s
+Elapsed ordering time = 100s
+Elapsed ordering time = 105s
+Elapsed ordering time = 110s
+Ordering time: 115.30s
+
+Barrier statistics:
+ AA' NZ     : 6.262e+07
+ Factor NZ  : 4.678e+08 (roughly 5.0 GBytes of memory)
+ Factor Ops : 1.474e+11 (roughly 23 seconds per iteration)
+ Threads    : 2
+
+Barrier performed 0 iterations in 285.68 seconds
+Error termination
+
+
+
+Root relaxation: unknown termination status, 0 iterations, 514.65 seconds
+
+Explored 0 nodes (0 simplex iterations) in 606.45 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -71702.5 -71705.2 
+
+Time limit reached
+Best objective -7.170253493325e+04, best bound 4.207384513234e+04, gap 158.6783%
+ILP took 622578 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 9974
+#AggregatedClauses: 1471441
+#CountingConstraintsAggregatingMoreThanOneClause: 1541
+#CountingConstraintsWithMoreThanOneLiteral: 1469635
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1469635
+#CountingConstraintsWithOneLiteral: 1806
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 252275
+#ZVariables: 1471440
+#BinaryVariables: 1544366
+
+---- Start  Loop 5 ----Sat Dec 08 20:42:34 IRST 2018
+add 1 constraints (total number = 2670560)
+Optimize a model with 2670560 rows, 1545906 columns and 5862104 nonzeros
+Variable types: 0 continuous, 1545906 integer (1544366 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 7e-01]
+  Bounds range     [1e+00, 7e+04]
+  RHS range        [1e+00, 5e+03]
+
+MIP start produced solution with objective -71702.5 (7.02s)
+Loaded MIP start with objective -71702.5
+Processed MIP start in 7.20 seconds
+
+Presolve removed 0 rows and 0 columns (presolve time = 9s) ...
+Presolve removed 139 rows and 4717 columns (presolve time = 18s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 22s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 25s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 30s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 35s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 40s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 45s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 50s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 55s) ...
+Presolve removed 1806 rows and 6384 columns (presolve time = 68s) ...
+Presolve removed 6736 rows and 9427 columns (presolve time = 76s) ...
+Presolve removed 6736 rows and 9427 columns
+Presolve time: 75.87s
+Presolved: 2663824 rows, 1536479 columns, 5597318 nonzeros
+Variable types: 0 continuous, 1536479 integer (1536479 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Presolve removed 0 rows and 0 columns (presolve time = 9s) ...
+Presolve removed 0 rows and 0 columns (presolve time = 21s) ...
+Presolved: 2663824 rows, 1536479 columns, 5597318 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 10s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 57s
+Elapsed ordering time = 60s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Elapsed ordering time = 85s
+Elapsed ordering time = 90s
+Elapsed ordering time = 95s
+Elapsed ordering time = 100s
+Elapsed ordering time = 105s
+Elapsed ordering time = 110s
+Ordering time: 119.15s
+
+Barrier statistics:
+ AA' NZ     : 6.262e+07
+ Factor NZ  : 4.678e+08 (roughly 5.0 GBytes of memory)
+ Factor Ops : 1.474e+11 (roughly 20 seconds per iteration)
+ Threads    : 2
+
+Barrier performed 0 iterations in 295.75 seconds
+Error termination
+
+
+
+Root relaxation: unknown termination status, 0 iterations, 512.62 seconds
+
+Explored 0 nodes (0 simplex iterations) in 610.68 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: -71702.5 
+
+Time limit reached
+Best objective -7.170253493325e+04, best bound 4.207431193434e+04, gap 158.6790%
+ILP took 632446 Milliseconds.
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 11631
+#AggregatedClauses: 1471441
+#CountingConstraintsAggregatingMoreThanOneClause: 1541
+#CountingConstraintsWithMoreThanOneLiteral: 1469635
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 1469635
+#CountingConstraintsWithOneLiteral: 1806
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 252275
+#ZVariables: 1471440
+#BinaryVariables: 1544366
+
+Total ILP Time: 3161489
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Sat Dec 08 20:53:41 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 647
+
+Number of formulas: 1733
+#Hard Formulas: 1
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+91496 evidence atoms
+Grounding took: 29252ms
+Soft objective 3.65767643719541E7
+Hard objective 4579.0
+Evaluation took: 32626ms
+data/pr/prog.mln;data/pr/evidence.db;1.0;z aggr;cpi;;runtime;3292046;objective;3.65767643719541E7;hardObjective;4579.0
+Iteration finished. Run Time: 3292046, ILP Time: 3161489
+#iterations: 1
+Average Runtime: 3292046
+Average ILP Time: 3161489
+==========================
+
+data/pr/prog.mln;data/pr/evidence.db;1.0;z aggr;cpi;;runtime;3292046;objective;3.65767643719541E7;hardObjective;4579.0
+duration:3292046
+

@@ -1,0 +1,129 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;no cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Thu Dec 13 14:59:48 IRST 2018
+...................PutDataIntoTables duration: 102
+
+Number of formulas: 7717
+#Hard Formulas: 8
+#Soft Formulas: 7709
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1265
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+28282 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Thu Dec 13 14:59:48 IRST 2018
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 8
+#CountingConstraintsAggregatingMoreThanOneClause: 8
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 10760
+#ZVariables: 0
+#BinaryVariables: 10760
+
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 1265
+#AggregatedClauses: 26701
+#CountingConstraintsAggregatingMoreThanOneClause: 3121
+#CountingConstraintsWithMoreThanOneLiteral: 26514
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 121118
+#CountingConstraintsWithOneLiteral: 187
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 191113
+#ZVariables: 26693
+#BinaryVariables: 91648
+
+---- Start  Loop 0 ----Thu Dec 13 14:59:51 IRST 2018
+add 74497 constraints (total number = 74497)
+Optimize a model with 74497 rows, 94761 columns and 434960 nonzeros
+Variable types: 0 continuous, 94761 integer (91648 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [7e-03, 2e+01]
+  Bounds range     [1e+00, 5e+04]
+  RHS range        [1e+00, 5e+04]
+Found heuristic solution: objective 13300.451976
+Presolve removed 4469 rows and 70133 columns
+Presolve time: 2.05s
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+Found heuristic solution: objective 19029.693939
+Variable types: 0 continuous, 24628 integer (23670 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   24528    2.2568841e+04   0.000000e+00   4.343373e+04      5s
+   26694    2.3506320e+04   0.000000e+00   2.651726e+05     10s
+   32672    2.4420159e+04   0.000000e+00   4.936063e+04     15s
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 2.443099e+04, 27052 iterations, 17.66 seconds
+Total elapsed time = 20.53s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 24430.9851    0 24182 19029.6939 24430.9851  28.4%     -   21s
+
+Explored 1 nodes (27052 simplex iterations) in 21.92 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 19029.7 17089.3 
+
+Optimal solution found (tolerance 3.00e-01)
+Best objective 1.902969393914e+04, best bound 2.443098508089e+04, gap 28.3835%
+ILP took 22975 Milliseconds.
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 1265
+#AggregatedClauses: 26701
+#CountingConstraintsAggregatingMoreThanOneClause: 3121
+#CountingConstraintsWithMoreThanOneLiteral: 26514
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 121118
+#CountingConstraintsWithOneLiteral: 187
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 191113
+#ZVariables: 26693
+#BinaryVariables: 91648
+
+Total ILP Time: 22975
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI false=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Thu Dec 13 15:00:16 IRST 2018
+.......................PutDataIntoTables duration: 166
+
+Number of formulas: 7717
+#Hard Formulas: 8
+#Soft Formulas: 7709
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1265
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+150800 evidence atoms
+Grounding took: 476ms
+Soft objective 6424.404268439995
+Hard objective 10760.0
+Evaluation took: 2637ms
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;no cpi;;runtime;28472;objective;6424.404268439995;hardObjective;10760.0
+Iteration finished. Run Time: 28472, ILP Time: 22975
+#iterations: 1
+Average Runtime: 28472
+Average ILP Time: 22975
+==========================
+
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;no cpi;;runtime;28472;objective;6424.404268439995;hardObjective;10760.0
+duration:28472
+

@@ -1,0 +1,113 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/pr/prog.mln;data/pr/evidence.db;1.0E-6;z aggr;no cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Sat Dec 08 21:24:39 IRST 2018
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 505
+
+Number of formulas: 2504
+#Hard Formulas: 1
+#Soft Formulas: 2503
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 2460
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+18132 evidence atoms
+Aggregation order -1
+===== Start Standard Solver =====Sat Dec 08 21:25:07 IRST 2018
+#AggregatedHardFormulas: 1
+#AggregatedSoftFormulas: 0
+#AggregatedClauses[1]: 1
+#CountingConstraintsAggregatingMoreThanOneClause[1]: 1
+#CountingConstraintsWithMoreThanOneLiteral[1]: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral[1]: 0
+#CountingConstraintsWithOneLiteral[1]: 1
+#ConstraintsAggregatedByContingConstraintWithOneLiteral[1]: 4579
+#ZVariables: 0
+#BinaryVariables: 4579
+#MixedVariables: 0
+
+Exception in thread "pool-2-thread-1" java.lang.OutOfMemoryError: Java heap space
+	at com.mysql.jdbc.MysqlIO.nextRowFast(MysqlIO.java:1676)
+	at com.mysql.jdbc.MysqlIO.nextRow(MysqlIO.java:1434)
+	at com.mysql.jdbc.MysqlIO.readSingleRowSet(MysqlIO.java:2936)
+	at com.mysql.jdbc.MysqlIO.getResultSet(MysqlIO.java:477)
+	at com.mysql.jdbc.MysqlIO.readResultsForQueryOrUpdate(MysqlIO.java:2631)
+	at com.mysql.jdbc.MysqlIO.readAllResults(MysqlIO.java:1800)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1557)
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:184)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT (1  * 0.0436411) as weight, xx.a2, xx.a3, xx.a1 FROM (SELECT x0.field0 as `a2`, x1.field0 as `a3`, x2.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `Func_id_typePred` x1  INNER JOIN `Protein_typePred` x2 ) as xx
+ - Message Unknown character set index for field '14128' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:339)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT COUNT(*) as 'all',COUNT(DISTINCT xx.a1, xx.a2) as `n_a1|a2`,COUNT(DISTINCT xx.a2, xx.a3) as `n_a2|a3`,COUNT(DISTINCT xx.a1, xx.a3) as `n_a1|a3`FROM (SELECT x0.field0 as `a2`, x1.field0 as `a3`, x2.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `Func_id_typePred` x1  INNER JOIN `Protein_typePred` x2 ) as xx
+ - Message Unknown character set index for field '12297' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateAndRunCountingQuery(FormulaRestrictionBuilder.java:172)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:314)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+com.googlecode.rockit.exception.DatabaseException: 
+===========================================================================
+Xeggora terminated with an error in the SQL Query. There are two reasons for this error:
+(a) The most common reason for this is that your model is too large. In this case you will get timeout errors or 'SQLException: Incorrect key file for table' errors.
+    Either your -data file contains too many entries or your -input file contains formulas with too many variables (more than 3 variables might be already critical)
+    Please make your -data file much smaller (not more than 20 entries) and try again.
+
+(b) If you still get an SQL Error (typically saying 'You have an error in your SQL syntax'), this is presumably a bug.
+    Please generate a ticket at https://code.google.com/p/xeggora/issues/list and upload your MLN and data file. 
+    Furthermore, please post the following error messages into the ticket:
+ - Query SELECT COUNT(*) as 'all',COUNT(DISTINCT xx.a1, xx.varString1343) as `n_a1|varString1343`FROM (SELECT x1.field0 as `varString1343`, x0.field0 as `a1` FROM `Protein_typePred` x0  INNER JOIN `varString1343` x1 ) as xx
+ - Message Unknown character set index for field '25206' received from server.
+Thank you for your help in improving Xeggora.
+==========================================================================
+
+	at com.googlecode.rockit.conn.sql.MySQLConnector.executeSelectQuery(MySQLConnector.java:187)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateAndRunCountingQuery(FormulaRestrictionBuilder.java:172)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.generateRestrictions(FormulaRestrictionBuilder.java:314)
+	at com.googlecode.rockit.app.solver.thread.FormulaRestrictionBuilder.run(FormulaRestrictionBuilder.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+

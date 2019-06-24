@@ -1,0 +1,205 @@
+Parameters.THREAD_NUMBER 4
+
+*** ITERATION 1 ***
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Tue May 22 21:38:50 IRDT 2018
+...................PutDataIntoTables duration: 106
+
+Number of formulas: 7717
+28282 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Tue May 22 21:38:51 IRDT 2018
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 8
+#CountingConstraintsAggregatingMoreThanOneClause: 8
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 10760
+#ZVariables: 0
+
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 1265
+#AggregatedClauses: 25118
+#CountingConstraintsAggregatingMoreThanOneClause: 1976
+#CountingConstraintsWithMoreThanOneLiteral: 25092
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 76716
+#CountingConstraintsWithOneLiteral: 26
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 169798
+#ZVariables: 25110
+
+---- Start  Loop 0 ----Tue May 22 21:38:53 IRDT 2018
+add 72914 constraints (total number = 72914)
+Optimize a model with 72914 rows, 93178 columns and 366238 nonzeros
+Variable types: 0 continuous, 93178 integer (91210 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 2e+00]
+  Bounds range     [1e+00, 5e+04]
+  RHS range        [1e+00, 5e+04]
+Found heuristic solution: objective 5234.1668880
+Presolve removed 2886 rows and 68550 columns
+Presolve time: 1.62s
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+Found heuristic solution: objective 8699.3961480
+Variable types: 0 continuous, 24628 integer (23670 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   24585    1.2504599e+04   0.000000e+00   3.082092e+05      5s
+   27222    1.3578271e+04   0.000000e+00   2.792948e+06     10s
+   30462    1.3809942e+04   0.000000e+00   1.911841e+06     15s
+   32462    1.3890038e+04   0.000000e+00   1.819001e+06     20s
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.447899e+04, 27443 iterations, 19.45 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 14478.9895    0 24182 8699.39615 14478.9895  66.4%     -   22s
+H    0     0                    10403.201970 14478.9895  39.2%     -   22s
+H    0     0                    10405.023603 14478.9895  39.2%     -   30s
+H    0     0                    10431.055494 14478.9895  38.8%     -   30s
+H    0     0                    10449.946899 14478.9895  38.6%     -   30s
+     0     0 14469.3806    0 24146 10449.9469 14469.3806  38.5%     -   44s
+     0     0 14434.2921    0 23996 10449.9469 14434.2921  38.1%     -   93s
+     0     0 14432.5647    0 23988 10449.9469 14432.5647  38.1%     -  100s
+     0     0 14432.5647    0 23988 10449.9469 14432.5647  38.1%     -  101s
+H    0     0                    10459.198683 14432.5647  38.0%     -  201s
+     0     0 14369.0262    0 23733 10459.1987 14369.0262  37.4%     -  201s
+     0     0 14365.7181    0 23742 10459.1987 14365.7181  37.4%     -  230s
+     0     0 14365.3096    0 23749 10459.1987 14365.3096  37.3%     -  239s
+     0     0 14365.0352    0 23771 10459.1987 14365.0352  37.3%     -  245s
+     0     0 14365.0057    0 23759 10459.1987 14365.0057  37.3%     -  247s
+     0     0 14365.0057    0 23761 10459.1987 14365.0057  37.3%     -  248s
+     0     0 14286.0565    0 23371 10459.1987 14286.0565  36.6%     -  453s
+H    0     0                    10463.378718 14286.0565  36.5%     -  549s
+     0     0 14276.9412    0 23342 10463.3787 14276.9412  36.4%     -  549s
+     0     0 14275.3380    0 23319 10463.3787 14275.3380  36.4%     -  583s
+     0     0 14275.2060    0 23307 10463.3787 14275.2060  36.4%     -  592s
+     0     0 14275.1952    0 23281 10463.3787 14275.1952  36.4%     -  595s
+
+Cutting planes:
+  Gomory: 227
+  Zero half: 4357
+
+Explored 1 nodes (107404 simplex iterations) in 600.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 8: 10463.4 10459.2 10449.9 ... 7327
+
+Time limit reached
+Best objective 1.046337871800e+04, best bound 1.427519523690e+04, gap 36.4301%
+ILP took 600488 Milliseconds.
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 1890
+#AggregatedClauses: 25118
+#CountingConstraintsAggregatingMoreThanOneClause: 1976
+#CountingConstraintsWithMoreThanOneLiteral: 25092
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 76716
+#CountingConstraintsWithOneLiteral: 26
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 169798
+#ZVariables: 25110
+
+Dispose model
+Dispose environment
+Database connection terminated
+=XEGGORA EVAL=CPI true=Z-VAR AGGR true ORDER 1============================================
+===== Start Standard Grounder =====Tue May 22 21:48:55 IRDT 2018
+.......................PutDataIntoTables duration: 74
+
+Number of formulas: 7717
+28282 evidence atoms
+Soft objective -129153.26079199999
+Hard objective 3570.0
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;cpi;;runtime;605609;objective;-129153.26079199999;hardObjective;3570.0
+Iteration finished. Run Time: 605609, ILP Time: 600488
+
+*** ITERATION 2 ***
+data/er/prog.mln;data/er/evidence.db;0.3;z aggr;cpi;
+Academic license - for non-commercial use only
+===== Start Standard Grounder =====Tue May 22 21:48:58 IRDT 2018
+...................PutDataIntoTables duration: 58
+
+Number of formulas: 7717
+28282 evidence atoms
+Aggregation order 1
+===== Start Standard Solver =====Tue May 22 21:48:58 IRDT 2018
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 0
+#AggregatedClauses: 8
+#CountingConstraintsAggregatingMoreThanOneClause: 8
+#CountingConstraintsWithMoreThanOneLiteral: 0
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 0
+#CountingConstraintsWithOneLiteral: 8
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 10760
+#ZVariables: 0
+
+#AggregatedHardFormulas: 8
+#AggregatedSoftFormulas: 1265
+#AggregatedClauses: 25118
+#CountingConstraintsAggregatingMoreThanOneClause: 1976
+#CountingConstraintsWithMoreThanOneLiteral: 25092
+#ConstraintsAggregatedByContingConstraintWithMoreThanOneLiteral: 76716
+#CountingConstraintsWithOneLiteral: 26
+#ConstraintsAggregatedByContingConstraintWithOneLiteral: 169798
+#ZVariables: 25110
+
+---- Start  Loop 0 ----Tue May 22 21:49:00 IRDT 2018
+add 72914 constraints (total number = 72914)
+Optimize a model with 72914 rows, 93178 columns and 366238 nonzeros
+Variable types: 0 continuous, 93178 integer (91210 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e-01, 2e+00]
+  Bounds range     [1e+00, 5e+04]
+  RHS range        [1e+00, 5e+04]
+Found heuristic solution: objective 5234.1668880
+Presolve removed 2886 rows and 68550 columns
+Presolve time: 1.72s
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+Found heuristic solution: objective 8699.3961480
+Variable types: 0 continuous, 24628 integer (23670 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Presolved: 70028 rows, 24628 columns, 146776 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   24585    1.2504599e+04   0.000000e+00   3.082092e+05      5s
+   27342    1.3578689e+04   0.000000e+00   1.776567e+07     10s
+   30662    1.3816420e+04   0.000000e+00   8.223957e+05     15s
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.447899e+04, 27443 iterations, 18.12 seconds
+Total elapsed time = 20.53s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 14478.9895    0 24182 8699.39615 14478.9895  66.4%     -   21s
+H    0     0                    10403.201970 14478.9895  39.2%     -   21s
+H    0     0                    10405.023603 14478.9895  39.2%     -   27s
+H    0     0                    10431.055494 14478.9895  38.8%     -   27s
+H    0     0                    10449.946899 14478.9895  38.6%     -   27s
+     0     0 14469.3806    0 24146 10449.9469 14469.3806  38.5%     -   43s
+     0     0 14434.2921    0 23996 10449.9469 14434.2921  38.1%     -   94s
+

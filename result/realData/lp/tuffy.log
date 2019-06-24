@@ -1,0 +1,62 @@
+mohammad@mohammad:~/projects/xeggora/data/lp$ java -jar ~/tuffy/tuffy.jar -i prog.mln -e evidence.db -q advisedBy -o tuffyOutput.db
+Database schema     = tuffy_mohammad_mohammad_7495
+Current directory   = /home/mohammad/projects/xeggora/data/lp
+Temporary directory = /tmp/tuffy-workspace/tuffy_mohammad_mohammad_7495
+*** Welcome to Tuffy 0.3!
+>>> Running partition-aware inference.
+>>> Connecting to RDBMS at jdbc:postgresql://localhost:5432/postgres
+>>> Parsing program file: prog.mln
+>>> Parsing evidence file: evidence.db
+>>> Storing evidence...
+advisedBy(v1, v2)
+>>> Grounding...
+### atoms = 4,408; clauses = 152,695
+>>> Partitioning MRF...
+>>> Grouping Components into Buckets...
+### 1 components; 1 partitions; 1 buckets
+>>> Running MAP inference on 1 component (grouped into 1 bucket)
+>>> Processing Bucket #1 (1 component)
+    Loading data...
+    Running inference with 4 thread(s)...
+flushing states of 4408 atoms
+### Best answer has cost 2804.88
+>>> Writing answer to file: tuffyOutput.db
+>>> Cleaning up temporary data
+    Removing database schema 'tuffy_mohammad_mohammad_7495'...OK
+    Removing temporary dir '/tmp/tuffy-workspace/tuffy_mohammad_mohammad_7495'...OK
+*** Tuffy exited at 17:03:11 12/9/18 after running for [3 min, 50.630 sec]
+
+===== Start Standard Grounder =====Sun Dec 09 17:04:57 IRST 2018
+...............................PutDataIntoTables duration: 138
+
+Number of formulas: 24
+#Hard Formulas: 0
+#Soft Formulas: 24
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 24
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+1315 evidence atoms
+Grounding took: 686ms
+Soft objective 112332.950155476
+Hard objective 0.0
+Evaluation took: 4248ms
+No Simplify Tuffy Evaluation: 112332.950155476
+
+===== Start Standard Grounder =====Sun Dec 09 23:17:11 IRST 2018
+...............................PutDataIntoTables duration: 9
+
+Number of formulas: 24
+#Hard Formulas: 0
+#Soft Formulas: 24
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 24
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+1047 evidence atoms
+Grounding took: 508ms
+Soft objective 111646.03547999999
+Hard objective 0.0
+Evaluation took: 1375ms
+No Simplify Empty Evaluation: 111646.03547999999
+

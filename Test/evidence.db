@@ -1,0 +1,8 @@
+Child(B,C)
+Child(B,D)
+Kind(C)
+HasFunWith(D,B)
+//!Happy(B)
+Child(E,F)
+Child(E,G)
+

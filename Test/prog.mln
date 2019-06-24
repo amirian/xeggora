@@ -1,0 +1,8 @@
+Kind(dad)
+Happy(son)
+//Rich(dad)
+*Child(son,dad)
+HasFunWith(dad,son)
+
+1.5 !Kind(x) v !Child(y,x) v !HasFunWith(x,y) v Happy(y) //v !Rich(x)
+

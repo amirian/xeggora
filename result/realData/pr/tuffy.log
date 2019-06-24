@@ -1,0 +1,69 @@
+java -jar ~/tuffy/tuffy.jar -i prog.mln -e evidence.db -r outputTuffy.db -q interaction,functionProtein
+Database schema     = tuffy_mohammad_mohammad_4429
+Current directory   = /home/mohammad/projects/xeggora/data/GSW/pr/simple
+Temporary directory = /tmp/tuffy-workspace/tuffy_mohammad_mohammad_4429
+*** Welcome to Tuffy 0.3!
+>>> Running partition-aware inference.
+>>> Connecting to RDBMS at jdbc:postgresql://localhost:5432/postgres
+>>> Parsing program file: prog.mln
+>>> Parsing evidence file: evidence.db
+>>> Storing evidence...
+functionProtein(v1, v2)
+interaction(v1, v2)
+>>> Grounding...
+### atoms = 69,887; clauses = 2,618,089
+>>> Partitioning MRF...
+1000000
+2000000
+1000000
+2000000
+>>> Grouping Components into Buckets...
+### 1773 components; 1773 partitions; 1 buckets
+>>> Running MAP inference on 1,773 components (grouped into 1 bucket)
+>>> Processing Bucket #1 (1,773 components)
+    Loading data...
+    Running inference with 4 thread(s)...
+flushing states of 69887 atoms
+### Best answer has cost 89954.07
+>>> Writing answer to file: outputTuffy.db
+>>> Cleaning up temporary data
+    Removing database schema 'tuffy_mohammad_mohammad_4429'...OK
+    Removing temporary dir '/tmp/tuffy-workspace/tuffy_mohammad_mohammad_4429'...OK
+*** Tuffy exited at 7:49:41 11/4/18 after running for [19 min, 21.489 sec]
+
+Tuffy Evaluation on GSW Model:
+===== Start Standard Grounder =====Sun Nov 04 11:53:25 IRST 2018
+...................PutDataIntoTables duration: 228
+
+Number of formulas: 12
+#Hard Formulas: 1
+#Soft Formulas: 9
+#GSW Formulas: 2
+#Soft Formulas with nonzero weight: 6
+#Objective Formulas: 2
+#Cardinality Formulas: 0
+96730 evidence atoms
+Grounding took: 742ms
+Soft objective 3.6600435982528895E7
+Hard objective 4579.0
+Evaluation took: 3024ms
+No Simplify Tuffy Evaluation: 3.6600435982528895E7
+
+Tuffy Evaluation on Simple Model:
+===== Start Standard Grounder =====Sun Nov 04 10:28:03 IRST 2018
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................PutDataIntoTables duration: 1289
+
+Number of formulas: 1733
+#Hard Formulas: 1
+#Soft Formulas: 1732
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 1689
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+100138 evidence atoms
+Grounding took: 29250ms
+Soft objective 3.6600435982529186E7
+Hard objective 4579.0
+Evaluation took: 34610ms
+No Simplify Tuffy Evaluation: 3.6600435982529186E7
+

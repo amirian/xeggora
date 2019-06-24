@@ -1,0 +1,46 @@
+//predicates
+* subsumesHard(Concept, Concept)
+* opsupHard(Objectproperty, Concept, Concept)
+* pcomHard(Objectproperty, Objectproperty, Objectproperty)
+* concept(Concept)
+* opsubEvidence(Objectproperty, Concept, Concept, float_ )
+* intersectionHard(Concept, Concept, Concept)
+* psubsumesHard(Objectproperty, Objectproperty)
+* opsupEvidence(Objectproperty, Concept, Concept, float_ )
+* subsumesEvidence(Concept, Concept, float_ )
+* intersectionEvidence(Concept, Concept, Concept, float_ )
+* opsubHard(Objectproperty, Concept, Concept)
+* objectproperty(Objectproperty)
+* pcomEvidence(Objectproperty, Objectproperty, Objectproperty, float_ )
+* psubsumesEvidence(Objectproperty, Objectproperty, float_ )
+* isBottom(Concept)
+pcom(Objectproperty, Objectproperty, Objectproperty)
+intersection(Concept, Concept, Concept)
+opsub(Objectproperty, Concept, Concept)
+psubsumes(Objectproperty, Objectproperty)
+opsup(Objectproperty, Concept, Concept)
+subsumes(Concept, Concept)
+
+//formulars
+!concept(c1) v subsumes(c1, "owl:Thing").
+!concept(c1) v isBottom(c1) v subsumes(c1, c1).
+!concept(c1) v !subsumes(c1, "owl:Nothing").
+
+!subsumesHard(c1, c2) v subsumes(c1, c2).
+!intersectionHard(c1, c2, c3) v intersection(c1, c2, c3).
+!opsubHard(p1, c1, c2) v opsub(p1, c1, c2).
+!opsupHard(p1, c1, c2) v opsup(p1, c1, c2).
+!psubsumesHard(p1, p2) v psubsumes(p1, p2).
+!pcomHard(p1, p2, p3) v pcom(p1, p2, p3).
+conf:  !concept(c1) v !concept(c2) v !subsumesEvidence(c1, c2, conf) v  subsumes(c1, c2)
+conf:  !concept(c1) v !concept(c2) v !concept(c3) v !intersectionEvidence(c1, c2, c3, conf) v  intersection(c1, c2, c3)
+conf:  !concept(c1) v !concept(c2) v !objectproperty(p1) v !opsubEvidence(p1, c1, c2, conf) v  opsub(p1, c1, c2)
+conf:  !concept(c1) v !concept(c2) v !objectproperty(p1) v !opsupEvidence(p1, c1, c2, conf) v  opsup(p1, c1, c2)
+conf:  !objectproperty(p1) v !objectproperty(p2) v !psubsumesEvidence(p1, p2, conf) v  psubsumes(p1, p2)
+conf:  !objectproperty(p1) v !objectproperty(p2) v !objectproperty(p3) v !pcomEvidence(p1, p2, p3, conf) v  pcom(p1, p2, p3)
+!concept(c1) v !concept(c2) v !concept(c3) v !subsumes(c1, c2) v !subsumes(c2, c3) v subsumes(c1, c3).
+!concept(c1) v !concept(c2) v !concept(c3) v !concept(c4) v !subsumes(c1, c2) v !subsumes(c1, c3) v !intersection(c2, c3, c4) v subsumes(c1, c4).
+!concept(c1) v !concept(c2) v !concept(c3) v !objectproperty(p1) v !subsumes(c1, c2) v !opsup(p1, c3, c2) v opsup(p1, c3, c1).
+!concept(c1) v !concept(c2) v !concept(c3) v !concept(c4) v !objectproperty(p1) v !opsup(p1, c2, c1) v !subsumes(c2, c3) v !opsub(p1, c3, c4) v subsumes(c1, c4).
+!concept(c1) v !concept(c2) v !objectproperty(p1) v !objectproperty(p2) v !opsup(p1, c1, c2) v !psubsumes(p1, p2) v opsup(p2, c1, c2).
+!concept(c1) v !concept(c2) v !concept(c3) v !objectproperty(p1) v !objectproperty(p2) v !objectproperty(p3) v !opsup(c1, p1, c2) v !opsup(p2, c3, c2) v !pcom(p1, p2, p3) v opsup(p3, c3, c1).

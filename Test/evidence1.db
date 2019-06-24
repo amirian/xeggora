@@ -1,0 +1,6 @@
+Child(B,C)
+Child(B,D)
+Child(E,C)
+Child(F,C)
+Kind(C)
+

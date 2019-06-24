@@ -1,0 +1,792 @@
+Data Size: 100000, k: 0, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 403 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 471 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 456 milliseconds.
+
+Evidential PositivePerfect took: 36 milliseconds.
+
+Evidential NegativeNaive   took: 530 milliseconds.
+
+Evidential NegativePerfect took: 73 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 529 milliseconds.
+
+Evidential PositivePerfect took: 112 milliseconds.
+
+Evidential NegativeNaive   took: 586 milliseconds.
+
+Evidential NegativePerfect took: 281 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 575 milliseconds.
+
+Evidential PositivePerfect took: 147 milliseconds.
+
+Evidential NegativeNaive   took: 654 milliseconds.
+
+Evidential NegativePerfect took: 377 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 608 milliseconds.
+
+Evidential PositivePerfect took: 179 milliseconds.
+
+Evidential NegativeNaive   took: 695 milliseconds.
+
+Evidential NegativePerfect took: 465 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 669 milliseconds.
+
+Evidential PositivePerfect took: 223 milliseconds.
+
+Evidential NegativeNaive   took: 763 milliseconds.
+
+Evidential NegativePerfect took: 548 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 6, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 741 milliseconds.
+
+Evidential PositivePerfect took: 264 milliseconds.
+
+Evidential NegativeNaive   took: 873 milliseconds.
+
+Evidential NegativePerfect took: 688 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 7, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 782 milliseconds.
+
+Evidential PositivePerfect took: 302 milliseconds.
+
+Evidential NegativeNaive   took: 896 milliseconds.
+
+Evidential NegativePerfect took: 746 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 8, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 839 milliseconds.
+
+Evidential PositivePerfect took: 344 milliseconds.
+
+Evidential NegativeNaive   took: 1000 milliseconds.
+
+Evidential NegativePerfect took: 888 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 9, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 888 milliseconds.
+
+Evidential PositivePerfect took: 390 milliseconds.
+
+Evidential NegativeNaive   took: 1046 milliseconds.
+
+Evidential NegativePerfect took: 982 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 10, len: 11
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 957 milliseconds.
+
+Evidential PositivePerfect took: 446 milliseconds.
+
+Evidential NegativeNaive   took: 1102 milliseconds.
+
+Evidential NegativePerfect took: 1076 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 324 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 375 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 416 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 427 milliseconds.
+
+Evidential NegativePerfect took: 63 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 466 milliseconds.
+
+Evidential PositivePerfect took: 114 milliseconds.
+
+Evidential NegativeNaive   took: 502 milliseconds.
+
+Evidential NegativePerfect took: 279 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 506 milliseconds.
+
+Evidential PositivePerfect took: 144 milliseconds.
+
+Evidential NegativeNaive   took: 567 milliseconds.
+
+Evidential NegativePerfect took: 370 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 548 milliseconds.
+
+Evidential PositivePerfect took: 178 milliseconds.
+
+Evidential NegativeNaive   took: 639 milliseconds.
+
+Evidential NegativePerfect took: 469 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 611 milliseconds.
+
+Evidential PositivePerfect took: 222 milliseconds.
+
+Evidential NegativeNaive   took: 731 milliseconds.
+
+Evidential NegativePerfect took: 559 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 6, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 663 milliseconds.
+
+Evidential PositivePerfect took: 260 milliseconds.
+
+Evidential NegativeNaive   took: 774 milliseconds.
+
+Evidential NegativePerfect took: 650 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 7, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 753 milliseconds.
+
+Evidential PositivePerfect took: 311 milliseconds.
+
+Evidential NegativeNaive   took: 884 milliseconds.
+
+Evidential NegativePerfect took: 745 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 8, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 793 milliseconds.
+
+Evidential PositivePerfect took: 348 milliseconds.
+
+Evidential NegativeNaive   took: 935 milliseconds.
+
+Evidential NegativePerfect took: 872 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 9, len: 10
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 862 milliseconds.
+
+Evidential PositivePerfect took: 392 milliseconds.
+
+Evidential NegativeNaive   took: 1022 milliseconds.
+
+Evidential NegativePerfect took: 959 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 87 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 87 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 379 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 398 milliseconds.
+
+Evidential NegativePerfect took: 64 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 421 milliseconds.
+
+Evidential PositivePerfect took: 113 milliseconds.
+
+Evidential NegativeNaive   took: 483 milliseconds.
+
+Evidential NegativePerfect took: 273 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 477 milliseconds.
+
+Evidential PositivePerfect took: 143 milliseconds.
+
+Evidential NegativeNaive   took: 547 milliseconds.
+
+Evidential NegativePerfect took: 372 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 524 milliseconds.
+
+Evidential PositivePerfect took: 182 milliseconds.
+
+Evidential NegativeNaive   took: 607 milliseconds.
+
+Evidential NegativePerfect took: 455 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 587 milliseconds.
+
+Evidential PositivePerfect took: 219 milliseconds.
+
+Evidential NegativeNaive   took: 667 milliseconds.
+
+Evidential NegativePerfect took: 566 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 6, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 646 milliseconds.
+
+Evidential PositivePerfect took: 258 milliseconds.
+
+Evidential NegativeNaive   took: 740 milliseconds.
+
+Evidential NegativePerfect took: 642 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 7, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 672 milliseconds.
+
+Evidential PositivePerfect took: 299 milliseconds.
+
+Evidential NegativeNaive   took: 811 milliseconds.
+
+Evidential NegativePerfect took: 758 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 8, len: 9
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 760 milliseconds.
+
+Evidential PositivePerfect took: 340 milliseconds.
+
+Evidential NegativeNaive   took: 890 milliseconds.
+
+Evidential NegativePerfect took: 835 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 81 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 80 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 343 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 378 milliseconds.
+
+Evidential NegativePerfect took: 65 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 392 milliseconds.
+
+Evidential PositivePerfect took: 112 milliseconds.
+
+Evidential NegativeNaive   took: 446 milliseconds.
+
+Evidential NegativePerfect took: 273 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 435 milliseconds.
+
+Evidential PositivePerfect took: 144 milliseconds.
+
+Evidential NegativeNaive   took: 503 milliseconds.
+
+Evidential NegativePerfect took: 357 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 490 milliseconds.
+
+Evidential PositivePerfect took: 179 milliseconds.
+
+Evidential NegativeNaive   took: 580 milliseconds.
+
+Evidential NegativePerfect took: 450 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 545 milliseconds.
+
+Evidential PositivePerfect took: 219 milliseconds.
+
+Evidential NegativeNaive   took: 652 milliseconds.
+
+Evidential NegativePerfect took: 563 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 6, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 617 milliseconds.
+
+Evidential PositivePerfect took: 264 milliseconds.
+
+Evidential NegativeNaive   took: 738 milliseconds.
+
+Evidential NegativePerfect took: 649 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 7, len: 8
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 657 milliseconds.
+
+Evidential PositivePerfect took: 302 milliseconds.
+
+Evidential NegativeNaive   took: 784 milliseconds.
+
+Evidential NegativePerfect took: 740 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 76 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 75 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 308 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 333 milliseconds.
+
+Evidential NegativePerfect took: 64 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 369 milliseconds.
+
+Evidential PositivePerfect took: 114 milliseconds.
+
+Evidential NegativeNaive   took: 417 milliseconds.
+
+Evidential NegativePerfect took: 271 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 412 milliseconds.
+
+Evidential PositivePerfect took: 145 milliseconds.
+
+Evidential NegativeNaive   took: 488 milliseconds.
+
+Evidential NegativePerfect took: 373 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 459 milliseconds.
+
+Evidential PositivePerfect took: 182 milliseconds.
+
+Evidential NegativeNaive   took: 545 milliseconds.
+
+Evidential NegativePerfect took: 450 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 512 milliseconds.
+
+Evidential PositivePerfect took: 219 milliseconds.
+
+Evidential NegativeNaive   took: 602 milliseconds.
+
+Evidential NegativePerfect took: 542 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 6, len: 7
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 562 milliseconds.
+
+Evidential PositivePerfect took: 258 milliseconds.
+
+Evidential NegativeNaive   took: 671 milliseconds.
+
+Evidential NegativePerfect took: 655 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 70 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 70 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 292 milliseconds.
+
+Evidential PositivePerfect took: 30 milliseconds.
+
+Evidential NegativeNaive   took: 316 milliseconds.
+
+Evidential NegativePerfect took: 66 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 340 milliseconds.
+
+Evidential PositivePerfect took: 112 milliseconds.
+
+Evidential NegativeNaive   took: 391 milliseconds.
+
+Evidential NegativePerfect took: 280 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 391 milliseconds.
+
+Evidential PositivePerfect took: 145 milliseconds.
+
+Evidential NegativeNaive   took: 458 milliseconds.
+
+Evidential NegativePerfect took: 368 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 429 milliseconds.
+
+Evidential PositivePerfect took: 180 milliseconds.
+
+Evidential NegativeNaive   took: 506 milliseconds.
+
+Evidential NegativePerfect took: 449 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 5, len: 6
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 480 milliseconds.
+
+Evidential PositivePerfect took: 221 milliseconds.
+
+Evidential NegativeNaive   took: 600 milliseconds.
+
+Evidential NegativePerfect took: 569 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 5
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 66 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 64 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 5
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 246 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 274 milliseconds.
+
+Evidential NegativePerfect took: 66 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 5
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 304 milliseconds.
+
+Evidential PositivePerfect took: 111 milliseconds.
+
+Evidential NegativeNaive   took: 348 milliseconds.
+
+Evidential NegativePerfect took: 270 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 5
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 350 milliseconds.
+
+Evidential PositivePerfect took: 147 milliseconds.
+
+Evidential NegativeNaive   took: 421 milliseconds.
+
+Evidential NegativePerfect took: 372 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 4, len: 5
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 404 milliseconds.
+
+Evidential PositivePerfect took: 181 milliseconds.
+
+Evidential NegativeNaive   took: 480 milliseconds.
+
+Evidential NegativePerfect took: 454 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 4
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 61 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 60 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 4
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 210 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 234 milliseconds.
+
+Evidential NegativePerfect took: 64 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 4
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 271 milliseconds.
+
+Evidential PositivePerfect took: 112 milliseconds.
+
+Evidential NegativeNaive   took: 319 milliseconds.
+
+Evidential NegativePerfect took: 282 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 3, len: 4
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 321 milliseconds.
+
+Evidential PositivePerfect took: 150 milliseconds.
+
+Evidential NegativeNaive   took: 393 milliseconds.
+
+Evidential NegativePerfect took: 370 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 3
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 56 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 55 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 3
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 186 milliseconds.
+
+Evidential PositivePerfect took: 29 milliseconds.
+
+Evidential NegativeNaive   took: 210 milliseconds.
+
+Evidential NegativePerfect took: 64 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 2, len: 3
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 247 milliseconds.
+
+Evidential PositivePerfect took: 113 milliseconds.
+
+Evidential NegativeNaive   took: 300 milliseconds.
+
+Evidential NegativePerfect took: 271 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 2
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 50 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 50 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 1, len: 2
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 163 milliseconds.
+
+Evidential PositivePerfect took: 30 milliseconds.
+
+Evidential NegativeNaive   took: 191 milliseconds.
+
+Evidential NegativePerfect took: 67 milliseconds.
+
+---------------------------------------
+Data Size: 100000, k: 0, len: 1
+---------------------------------------
+ With 20% Random Evidence:
+Evidential PositiveNaive   took: 47 milliseconds.
+
+Evidential PositivePerfect took: 0 milliseconds.
+
+Evidential NegativeNaive   took: 47 milliseconds.
+
+Evidential NegativePerfect took: 0 milliseconds.
+
+---------------------------------------

@@ -1,0 +1,6 @@
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0E-6;FCA;cpi;simplified;#iters: 5;ILPtime: 37580;runtime: 90550;objective: 3.657120392154747E7;hardObjective: 4579.0
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0E-6;CPA;cpi;simplified;#iters: 5;ILPtime: 39912;runtime: 84969;objective: 3.657120392154747E7;hardObjective: 4579.0
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0E-6;TRAD;cpi;simplified;#iters: 5;ILPtime: 99192;runtime: 154164;objective: 3.657120392154747E7;hardObjective: 4579.0
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0;FCA;cpi;not simplified;#iters: 1;ILPtime: 4027580;runtime: 4122783;objective: 3.6576678935943715E7;hardObjective: 4579.0
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0;CPA;cpi;not simplified;#iters: 1;ILPtime: 3141465;runtime: 3252232;objective: 3.65767643719541E7;hardObjective: 4579.0<REACHED 10 MIN>
+data/pr/prog.mln;data/pr/evidence.db;gap: 1.0;TRAD;cpi;not simplified;#iters: 1;ILPtime: 4038901;runtime: 4123953;objective: 3.6576679155739754E7;hardObjective: 4579.0

@@ -1,0 +1,15 @@
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;FCA;no cpi;simplified;#iters: 5;ILPtime: 415;runtime: 3670;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;CPA;no cpi;simplified;#iters: 5;ILPtime: 352;runtime: 2635;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;TRAD;no cpi;simplified;#iters: 5;ILPtime: 2307;runtime: 5449;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;FCA;cpi;simplified;#iters: 5;ILPtime: 567;runtime: 3954;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;CPA;cpi;simplified;#iters: 5;ILPtime: 551;runtime: 3580;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 1.0E-6;TRAD;cpi;simplified;#iters: 5;ILPtime: 3284;runtime: 7233;objective: 5955.695532219999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.3;FCA;no cpi;not simplified;#iters: 5;ILPtime: 5215;runtime: 7249;objective: 6215.46589543999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.3;CPA;no cpi;not simplified;#iters: 5;ILPtime: 19734;runtime: 21962;objective: 6424.404268439995;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.3;TRAD;no cpi;not simplified;#iters: 5;ILPtime: 13639;runtime: 16425;objective: 7714.438061939991;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.2;FCA;no cpi;not simplified;#iters: 5;ILPtime: 5366;runtime: 7353;objective: 7969.7581044399885;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.2;CPA;no cpi;not simplified;#iters: 5;ILPtime: 19855;runtime: 22069;objective: 7780.84764893999;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.2;TRAD;no cpi;not simplified;#iters: 5;ILPtime: 580963;runtime: 583701;objective: 8104.666222439983;hardObjective: 10760.0
+data/er/prog.mln;data/er/evidence.db;gap: 0.01;FCA;no cpi;not simplified;#iters: 1;ILPtime: 960779;runtime: 964719;objective: 8109.216099939989;hardObjective: 10760.0<REACHED 10 MIN>
+data/er/prog.mln;data/er/evidence.db;gap: 0.01;CPA;no cpi;not simplified;#iters: 1;ILPtime: 960738;runtime: 963796;objective: 7923.10400143999;hardObjective: 10760.0<REACHED 10 MIN>
+data/er/prog.mln;data/er/evidence.db;gap: 0.01;TRAD;no cpi;not simplified;#iters: 1;ILPtime: 961381;runtime: 964636;objective: 8086.550632439987;hardObjective: 10760.0<REACHED 10 MIN>

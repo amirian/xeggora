@@ -1,0 +1,6 @@
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;FCA;no cpi;not simplified;#iters: 5;ILPtime: 918;runtime: 5697;objective: 7062859.859999999;hardObjective: 59700.0
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;CPA;no cpi;not simplified;#iters: 5;ILPtime: 746;runtime: 4479;objective: 7062859.859999999;hardObjective: 59700.0
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;TRAD;no cpi;not simplified;#iters: 5;ILPtime: 2166;runtime: 6015;objective: 7062859.859999999;hardObjective: 59700.0
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;FCA;cpi;not simplified;#iters: 5;ILPtime: 5572;runtime: 9518;objective: 7062859.859999999;hardObjective: 59700.0
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;CPA;cpi;not simplified;#iters: 5;ILPtime: 4642;runtime: 7645;objective: 7062859.859999999;hardObjective: 59700.0
+data/rc/prog.mln;data/rc/evidence.db;gap: 1.0E-6;TRAD;cpi;not simplified;#iters: 5;ILPtime: 12348;runtime: 15671;objective: 7062859.859999999;hardObjective: 59700.0

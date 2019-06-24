@@ -1,0 +1,98 @@
+/* Copyright 2015, Gurobi Optimization, Inc. */
+
+/* This example formulates and solves the following simple QCP model:
+
+     maximize    x
+     subject to  x + y + z = 1
+                 x^2 + y^2 <= z^2 (second-order cone)
+                 x^2 <= yz        (rotated second-order cone)
+*/
+
+import gurobi.*;
+
+public class IQCP {
+  public static void main(String[] args) {
+    try {
+      GRBEnv    env   = new GRBEnv("qcp.log");
+      GRBModel  model = new GRBModel(env);
+
+      // Create variables
+int n=3;
+      GRBVar z = model.addVar(0,GRB.INFINITY/*n*/,0.0/*2.3*/, GRB.INTEGER, "z");
+      GRBVar fac = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "fac");
+      GRBVar fb1c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "fb1c");
+      GRBVar fb2c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "fb2c");
+      GRBVar fb3c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "fb3c");
+      GRBVar cb1c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "cb1c");
+      GRBVar cb2c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "cb2c");
+      GRBVar cb3c = model.addVar(0, GRB.INFINITY, 0.0, GRB.BINARY, "cb3c");
+
+      // Integrate new variables
+
+      model.update();
+
+      // Set objective
+
+      GRBLinExpr obj = new GRBLinExpr();
+      obj.addTerm(2.3, z);
+      model.setObjective(obj, GRB.MAXIMIZE);
+
+      // Add linear constraint
+
+      GRBLinExpr expr = new GRBLinExpr();
+      expr.addTerm(1, z); 
+      model.addConstr(expr, GRB.LESS_EQUAL, n, "c0");
+
+      // Add second-order cone
+
+      GRBQuadExpr qexpr = new GRBQuadExpr();
+      qexpr.addTerm(1.0, fb1c, cb1c);
+      qexpr.addTerm(1.0, fb2c, cb2c);
+      qexpr.addTerm(1.0, fb3c, cb3c);
+      qexpr.addTerm(1.0, z);
+      qexpr.addTerm(n, fac);
+      model.addQConstr(qexpr, GRB.LESS_EQUAL, 2*n, "qc0");
+
+		model.update();
+		model.write("qcp.lp");
+		model.write("qcp.mps");
+
+		// Optimize model
+
+      model.optimize();
+
+      System.out.println(z.get(GRB.StringAttr.VarName)
+                         + " " +z.get(GRB.DoubleAttr.X));
+      System.out.println(fac.get(GRB.StringAttr.VarName)
+              + " " +fac.get(GRB.DoubleAttr.X));
+
+      System.out.println(fb1c.get(GRB.StringAttr.VarName)
+              + " " +fb1c.get(GRB.DoubleAttr.X));
+      System.out.println(cb1c.get(GRB.StringAttr.VarName)
+              + " " +cb1c.get(GRB.DoubleAttr.X));
+
+      System.out.println(fb2c.get(GRB.StringAttr.VarName)
+              + " " +fb2c.get(GRB.DoubleAttr.X));
+      System.out.println(cb2c.get(GRB.StringAttr.VarName)
+              + " " +cb2c.get(GRB.DoubleAttr.X));
+
+      System.out.println(fb3c.get(GRB.StringAttr.VarName)
+              + " " +fb3c.get(GRB.DoubleAttr.X));
+      System.out.println(cb3c.get(GRB.StringAttr.VarName)
+              + " " +cb3c.get(GRB.DoubleAttr.X));
+
+      System.out.println("Obj: " + model.get(GRB.DoubleAttr.ObjVal) + " " +
+                         obj.getValue());
+      System.out.println();
+
+      // Dispose of model and environment
+
+      model.dispose();
+      env.dispose();
+
+    } catch (GRBException e) {
+      System.out.println("Error code: " + e.getErrorCode() + ". " +
+          e.getMessage());
+    }
+  }
+}

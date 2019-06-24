@@ -1,0 +1,44 @@
+java -jar ~/tuffy/tuffy.jar -i prog.mln -e evidence.db -q category -o tuffyOutput.db
+Database schema     = tuffy_mohammad_mohammad_6502
+Current directory   = /home/mohammad/projects/xeggora/data/rc
+Temporary directory = /tmp/tuffy-workspace/tuffy_mohammad_mohammad_6502
+*** Welcome to Tuffy 0.3!
+>>> Running partition-aware inference.
+>>> Connecting to RDBMS at jdbc:postgresql://localhost:5432/postgres
+>>> Parsing program file: prog.mln
+>>> Parsing evidence file: evidence.db
+>>> Storing evidence...
+category(v1, v2)
+>>> Grounding...
+### atoms = 9,650; clauses = 73,265
+>>> Partitioning MRF...
+>>> Grouping Components into Buckets...
+### 546 components; 546 partitions; 1 buckets
+>>> Running MAP inference on 546 components (grouped into 1 bucket)
+>>> Processing Bucket #1 (546 components)
+    Loading data...
+    Running inference with 4 thread(s)...
+flushing states of 9650 atoms
+### Best answer has cost 361.56
+>>> Writing answer to file: tuffyOutput.db
+>>> Cleaning up temporary data
+    Removing database schema 'tuffy_mohammad_mohammad_6502'...OK
+    Removing temporary dir '/tmp/tuffy-workspace/tuffy_mohammad_mohammad_6502'...OK
+*** Tuffy exited at 22:42:39 12/10/18 after running for [0 min, 21.563 sec]
+
+===== Start Standard Grounder =====Mon Dec 10 22:53:39 IRST 2018
+....................PutDataIntoTables duration: 200
+
+Number of formulas: 17
+#Hard Formulas: 2
+#Soft Formulas: 15
+#GSW Formulas: 0
+#Soft Formulas with nonzero weight: 15
+#Objective Formulas: 0
+#Cardinality Formulas: 0
+112785 evidence atoms
+Grounding took: 571ms
+Soft objective 7062859.859999999
+Hard objective 59700.0
+Evaluation took: 2147ms
+No Simplify Tuffy Evaluation: 7062859.859999999
