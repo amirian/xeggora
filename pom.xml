@@ -4,7 +4,7 @@
 
     <groupId>com.mlnengine.xeggora</groupId>
     <artifactId>xeggora</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <packaging>jar</packaging>
 
     <name>xeggora</name>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.18</version>
+            <version>[8.0.16,)</version>
         </dependency>
         <!-- 
         This artifact has to be installed manually. Use 'xeggora' as version (not the gurobi version).
@@ -85,6 +85,7 @@
     </distributionManagement>
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -122,8 +123,8 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.googlecode.xeggora.app.Main</mainClass>
-                            <packageName>com.googlecode.xeggora.app</packageName>
+                            <mainClass>com.mlnengine.xeggora.app.Main</mainClass>
+                            <packageName>com.mlnengine.xeggora.app</packageName>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
@@ -174,9 +175,6 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
-        <pluginManagement>
-        	<plugins>
         		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         		<plugin>
         			<groupId>org.eclipse.m2e</groupId>
